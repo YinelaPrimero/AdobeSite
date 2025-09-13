@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { adobeApps } from '../data/adobeApps';
 import './HomePage.css';
@@ -12,12 +12,21 @@ const floatingCardColors: { [key: string]: string } = {
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState<string>('Todas');
 
   const handleAppClick = (appId: string) => {
     navigate(`/app/${appId}`);
   };
 
+  const handleFilterClick = (category: string) => {
+    setSelectedCategory(category);
+  };
+
   const categories = Array.from(new Set(adobeApps.map(app => app.category)));
+
+  const filteredApps = selectedCategory === 'Todas'
+    ? adobeApps
+    : adobeApps.filter(app => app.category === selectedCategory);
 
   return (
     <div className="home-page">
@@ -62,9 +71,18 @@ const HomePage: React.FC = () => {
 
           {/* Categories Filter */}
           <div className="categories-filter">
-            <button className="filter-btn active">Todas</button>
+            <button 
+              className={`filter-btn ${selectedCategory === 'Todas' ? 'active' : ''}`}
+              onClick={() => handleFilterClick('Todas')}
+            >
+              Todas
+            </button>
             {categories.map(category => (
-              <button key={category} className="filter-btn">
+              <button 
+                key={category} 
+                className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
+                onClick={() => handleFilterClick(category)}
+              >
                 {category}
               </button>
             ))}
@@ -72,7 +90,7 @@ const HomePage: React.FC = () => {
 
           {/* Apps Grid */}
           <div className="apps-grid">
-            {adobeApps.map(app => (
+            {filteredApps.map(app => (
               <div 
                 key={app.id} 
                 className={`app-card ${app.popular ? 'popular' : ''} ${app.id}`}
