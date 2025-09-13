@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { adobeApps } from '../data/adobeApps';
 import './AppDetail.css';
 
 const AppDetail: React.FC = () => {
+
   const { appId } = useParams<{ appId: string }>();
   const navigate = useNavigate();
-  
   const app = adobeApps.find(app => app.id === appId);
+
+  // Scroll al inicio cada vez que cambia el appId
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [appId]);
 
   if (!app) {
     return (
@@ -30,7 +35,10 @@ const AppDetail: React.FC = () => {
       <div className="container">
         {/* Back Button */}
         <button onClick={() => navigate('/')} className="back-button">
-          ← Volver a las aplicaciones
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5 18L8.5 12L14.5 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          Volver a las aplicaciones
         </button>
 
         {/* App Header */}
@@ -103,15 +111,6 @@ const AppDetail: React.FC = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="cta-section">
-          <h2>¿Listo para comenzar?</h2>
-          <p>Únete a millones de creativos que ya usan {app.name}</p>
-          <div className="cta-actions">
-            <button className="btn-primary-large">Comenzar prueba gratuita</button>
-            <button className="btn-outline">Ver todos los planes</button>
-          </div>
-        </div>
       </div>
     </div>
   );

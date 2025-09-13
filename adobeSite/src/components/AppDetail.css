@@ -20,6 +20,9 @@
   transition: all 0.3s ease;
   font-weight: 500;
   margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .back-button:hover {
@@ -61,7 +64,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 
 .app-title {
@@ -199,6 +201,8 @@
   font-weight: bold;
   font-size: 0.9rem;
   flex-shrink: 0;
+  align-self: center;
+  margin: 2px;
 }
 
 .feature-item span {
