@@ -8,6 +8,8 @@ export interface AdobeApp {
   features: string[];
   price: string;
   popular?: boolean;
+  extras?: string[];
+  recommendedFor?: string[];
 }
 
 export interface RouteConfig {

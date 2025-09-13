@@ -53,10 +53,8 @@ const AppDetail: React.FC = () => {
               <h1 className="app-title">{app.name}</h1>
               <p className="app-category">{app.category}</p>
               <p className="app-description">{app.description}</p>
-              <div className="app-price-large">{app.price}</div>
               <div className="app-actions">
-                <button className="btn-primary-large">Probar gratis</button>
-                <button className="btn-secondary-large">Comprar ahora</button>
+                <button className="btn-primary-large">Comprar ahora</button>
               </div>
             </div>
           </div>
@@ -64,7 +62,7 @@ const AppDetail: React.FC = () => {
 
         {/* Features Section */}
         <div className="features-section">
-          <h2>Características principales</h2>
+          <h2>¿Qué Incluye?</h2>
           <div className="features-grid">
             {app.features.map((feature, index) => (
               <div key={index} className="feature-item">
@@ -79,44 +77,9 @@ const AppDetail: React.FC = () => {
         <div className="additional-info">
           <div className="info-grid">
             <div className="info-card">
-              <h3>¿Qué incluye?</h3>
+              <h3>Beneficios</h3>
               <ul>
-                {Array.isArray(app.logo) && app.id === 'fotografia' ? (
-                  <>
-                    <li>Incluye:
-                      <ul style={{ marginTop: 4, marginBottom: 4 }}>
-                        <li>Adobe Lightroom</li>
-                        <li>Adobe Lightroom Classic</li>
-                        <li>Adobe Photoshop (escritorio, web, iPhone y iPad)</li>
-                      </ul>
-                    </li>
-                  </>
-                ) : Array.isArray(app.logo) && app.id === 'substance-3d-texturing' ? (
-                  <>
-                    <li>Incluye:
-                      <ul style={{ marginTop: 4, marginBottom: 4 }}>
-                        <li>Substance 3D Sampler</li>
-                        <li>Substance 3D Designer</li>
-                        <li>Substance 3D Painter</li>
-                      </ul>
-                    </li>
-                  </>
-                ) : Array.isArray(app.logo) && app.id === 'substance-3d-collection' ? (
-                  <>
-                    <li>Incluye:
-                      <ul style={{ marginTop: 4, marginBottom: 4 }}>
-                        <li>Substance 3D Modeler</li>
-                        <li>Substance 3D Sampler</li>
-                        <li>Substance 3D Designer</li>
-                        <li>Substance 3D Painter</li>
-                        <li>Substance 3D Stager</li>
-                        <li>Substance 3D Assets</li>
-                      </ul>
-                    </li>
-                  </>
-                ) : (
-                  <li>Acceso completo a {app.name}</li>
-                )}
+                <li>Acceso completo a {app.name}</li>
                 <li>Actualizaciones automáticas</li>
                 <li>Soporte técnico 24/7</li>
                 <li>Almacenamiento en la nube</li>
@@ -125,24 +88,20 @@ const AppDetail: React.FC = () => {
             </div>
             
             <div className="info-card">
-              <h3>Requisitos del sistema</h3>
+              <h3>Extras</h3>
               <ul>
-                <li>Windows 10 o macOS 10.15+</li>
-                <li>8 GB de RAM (recomendado 16 GB)</li>
-                <li>2 GB de espacio en disco</li>
-                <li>Conexión a internet</li>
-                <li>Resolución 1280x800 o superior</li>
+                {app.extras && app.extras.map((extra, index) => (
+                  <li key={index}>{extra}</li>
+                ))}
               </ul>
             </div>
             
             <div className="info-card">
-              <h3>Recursos adicionales</h3>
+              <h3>Recomendado para</h3>
               <ul>
-                <li>Tutoriales en video</li>
-                <li>Plantillas gratuitas</li>
-                <li>Comunidad de usuarios</li>
-                <li>Documentación completa</li>
-                <li>Foros de soporte</li>
+                {app.recommendedFor && app.recommendedFor.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>

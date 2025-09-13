@@ -10,11 +10,50 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/creative-cloud.svg',
     category: 'Planes Completos',
     features: [
-      'Más de 20 aplicaciones creativas',
-      'Herramientas de IA generativa',
-      '100GB de almacenamiento en la nube',
-      'Adobe Stock incluido',
-      'Soporte técnico prioritario'
+      'Photoshop',
+      'Illustrator',
+      'Adobe Premiere Pro',
+      'Acrobat Pro',
+      'InDesign',
+      'After Effects',
+      'Lightroom',
+      'Adobe XD',
+      'Animate',
+      'Lightroom Classic',
+      'Dreamweaver',
+      'Audition',
+      'InCopy',
+      'Character Animator',
+      'Capture',
+      'Adobe Fresco',
+      'Bridge',
+      'Adobe Express',
+      'Photoshop Express',
+      'Media Encoder',
+      'Aero',
+      'Adobe Scan',
+      'Fill & Sign',
+      'Acrobat Reader',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '4,000 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Foto',
+      'Diseño gráfico',
+      'Video',
+      'Ilustración',
+      'IU y UX',
+      'Acrobat y PDF',
+      'Redes sociales'
     ],
     price: 'Desde $52.99/mes',
     popular: true
@@ -27,11 +66,25 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/creative-cloud.svg',
     category: 'Planes Completos',
     features: [
-      'Photoshop e Illustrator',
+      'Photoshop',
+      'Illustrator',
+      'Adobe Premiere Pro',
       'Acrobat Pro',
-      'Almacenamiento en la nube',
-      'Sincronización automática',
-      'Actualizaciones regulares'
+      'InDesign',
+      '+ Ver más'
+    ],
+    extras: [
+      '25 créditos generativos mensuales para funciones estándar para imágenes y vectores con IA creativa',
+      'Tutoriales paso a paso',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      '100 GB de almacenamiento en la nube'
+    ],
+    recommendedFor: [
+      'Foto, diseño, video y más',
+      'Flujos de trabajo que usan varias aplicaciones creativas',
+      'IA creativa básica'
     ],
     price: 'Desde $29.99/mes'
   },
@@ -45,11 +98,26 @@ export const adobeApps: AdobeApp[] = [
     logo: ['/img/Iconos SVG/lightroom.svg', '/img/Iconos SVG/photoshop.svg'],
     category: 'Fotografía',
     features: [
-      'Lightroom y Lightroom Classic',
-      'Photoshop completo',
-      '1TB de almacenamiento en la nube',
-      'Sincronización entre dispositivos',
-      'Herramientas de IA para fotos'
+      'Lightroom',
+      'Lightroom Classic',
+      'Photoshop',
+      'Photoshop Express para dispositivos móviles',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '1TB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Gestión de fotos',
+      'Edición de fotos',
+      'Composición'
     ],
     price: 'Desde $9.99/mes',
     popular: true
@@ -62,11 +130,22 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/lightroom.svg',
     category: 'Fotografía',
     features: [
-      'Edición no destructiva',
-      'Organización de catálogos',
-      'Sincronización en la nube',
-      'Herramientas de retoque',
-      'Presets y perfiles'
+      'Lightroom',
+      'Lightroom Classic'
+    ],
+    extras: [
+      '1 TB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Gestión de fotos',
+      'Edición de fotos'
     ],
     price: 'Desde $9.99/mes'
   },
@@ -80,11 +159,27 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/photoshop.svg',
     category: 'Diseño Gráfico',
     features: [
-      'Edición de imágenes profesional',
-      'Herramientas de retoque avanzadas',
-      'Filtros y efectos creativos',
-      'Trabajo con capas',
-      'Integración con otras apps de Adobe'
+      'Photoshop',
+      'Adobe Fresco',
+      'Photoshop Express',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Edición de fotos',
+      'Composición',
+      'Dibujo y pintura',
+      'Diseño gráfico'
     ],
     price: 'Desde $20.99/mes',
     popular: true
@@ -97,11 +192,25 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/illustrator.svg',
     category: 'Diseño Gráfico',
     features: [
-      'Gráficos vectoriales escalables',
-      'Herramientas de dibujo precisas',
-      'Tipografía avanzada',
-      'Efectos 3D y perspectiva',
-      'Integración con Creative Cloud'
+      'Illustrator',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Ilustración',
+      'Dibujo y pintura',
+      'Tipografía',
+      'Diseño gráfico'
     ],
     price: 'Desde $20.99/mes',
     popular: true
@@ -116,11 +225,23 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/premiere.svg',
     category: 'Video',
     features: [
-      'Edición de video multicapa',
-      'Efectos y transiciones profesionales',
-      'Corrección de color avanzada',
-      'Integración con After Effects',
-      'Exportación en múltiples formatos'
+      'Adobe Premiere Pro',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Edición de video',
+      'Producción de video'
     ],
     price: 'Desde $20.99/mes',
     popular: true
@@ -133,11 +254,24 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/after-effects.svg',
     category: 'Video',
     features: [
-      'Motion graphics avanzados',
-      'Efectos de partículas',
-      'Composición 3D',
-      'Integración con Cinema 4D',
-      'Expresiones y scripting'
+      'After Effects',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Efectos visuales',
+      'Gráficos animados',
+      'Diseño de IU y UX'
     ],
     price: 'Desde $20.99/mes',
     popular: true
@@ -152,11 +286,23 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/indesign.svg',
     category: 'Diseño Editorial',
     features: [
-      'Maquetación profesional',
-      'Tipografía avanzada',
-      'Diseño interactivo',
-      'Exportación para impresión',
-      'Trabajo con múltiples páginas'
+      'InDesign',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Diseño de páginas',
+      'Diseño de impresión'
     ],
     price: 'Desde $20.99/mes',
     popular: true
@@ -169,11 +315,21 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/incopy.svg',
     category: 'Diseño Editorial',
     features: [
-      'Edición de texto en tiempo real',
-      'Integración con InDesign',
-      'Control de versiones',
-      'Trabajo colaborativo',
-      'Flujos de trabajo editoriales'
+      'InCopy'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Redacción de contenidos',
+      'Corrección de contenidos'
     ],
     price: 'Desde $20.99/mes'
   },
@@ -187,11 +343,22 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/acrobat.svg',
     category: 'Productividad',
     features: [
-      'Creación y edición de PDFs',
-      'Firma digital y electrónica',
-      'Colaboración en tiempo real',
-      'Conversión de formatos',
-      'Protección de documentos'
+      'Acrobat Pro',
+      'Acrobat Reader',
+      'Adobe Scan',
+      'Fill & Sign'
+    ],
+    extras: [
+      '100GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Fonts',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Flujos de trabajo de PDF avanzados',
+      'Documentos digitales',
+      'Funciones de firma avanzadas'
     ],
     price: 'Desde $14.99/mes',
     popular: true
@@ -204,11 +371,11 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/acrobat.svg',
     category: 'Productividad',
     features: [
-      'Preguntas inteligentes a documentos',
-      'Resúmenes automáticos',
-      'Búsqueda avanzada',
-      'Integración con Acrobat',
-      'Análisis de contenido'
+      'Asistente de IA para Acrobat'
+    ],
+    recommendedFor: [
+      'Flujos de trabajo de PDF',
+      'Documentos digitales'
     ],
     price: 'Desde $4.99/mes'
   },
@@ -222,11 +389,23 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/audition.svg',
     category: 'Audio',
     features: [
-      'Grabación multipista',
-      'Mezcla y masterización',
-      'Restauración de audio',
-      'Efectos y plugins',
-      'Integración con Premiere Pro'
+      'Audition',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Edición de audio',
+      'Efectos sonoros'
     ],
     price: 'Desde $20.99/mes'
   },
@@ -240,11 +419,23 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/dreamweaver.svg',
     category: 'Desarrollo Web',
     features: [
-      'Editor visual y de código',
-      'Diseño responsivo',
-      'Integración con Git',
-      'Previsualización en vivo',
-      'Soporte para frameworks modernos'
+      'Dreamweaver',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Diseño sitio web',
+      'Desarrollo Sitio web'
     ],
     price: 'Desde $20.99/mes'
   },
@@ -258,11 +449,22 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/animate.svg',
     category: 'Animación',
     features: [
-      'Animación 2D vectorial',
-      'Interactividad con JavaScript',
-      'Exportación multiplataforma',
-      'Herramientas de dibujo',
-      'Integración con Creative Cloud'
+      'Animate',
+      'Adobe Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      '100 GB de espacio en la nube',
+      'Tutoriales paso a paso',
+      'Adobe Portfolio',
+      'Adobe Fonts',
+      'Behance',
+      'Bibliotecas Creative Cloud',
+      'Acceso a las funciones más recientes',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Animación'
     ],
     price: 'Desde $20.99/mes'
   },
@@ -276,11 +478,27 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/cc-express.svg',
     category: 'Contenido Rápido',
     features: [
-      'Plantillas profesionales',
-      'Herramientas de IA avanzadas',
-      'Creación de videos',
-      'Diseño de redes sociales',
-      'Colaboración en equipo'
+      'Adobe Express',
+      'Photoshop Express',
+      'Adobe Firefly'
+    ],
+    extras: [
+      'Plantillas y elementos de diseño premium',
+      'Funciones premium como las de cambio de tamaño y eliminación del fondo del video',
+      'Más de 195 millones de fotografías, videos y archivos de música de Adobe Stock',
+      'Acciones rápidas de PDF ilimitadas',
+      'Programación ilimitada con Planificador de contenido',
+      '100 GB de espacio en la nube',
+      'Adobe Fonts',
+      'Bibliotecas Creative Cloud',
+      '250 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Edición de fotos',
+      'Edición de video',
+      'Diseño gráfico',
+      'Exportación en PDF',
+      'Redes sociales'
     ],
     price: 'Desde $9.99/mes',
     popular: true
@@ -295,11 +513,20 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/firefly.svg',
     category: 'IA Generativa',
     features: [
-      '2,000 créditos mensuales',
-      'Generación de imágenes con IA',
-      'Funciones premium de video',
-      'Funciones premium de audio',
-      'Acceso ilimitado a funciones estándar'
+      '2,000 créditos generativos mensuales para funciones prémium de video y audio',
+      'Acceso ilimitado a funciones estándar de imágenes y vectores'
+    ],
+    extras: [
+      '100GB de espacio en la nube',
+      'Adobe Fonts'
+    ],
+    recommendedFor: [
+      'Ideación',
+      'Conceptualización',
+      'Creación de video',
+      'Traducción de audio',
+      'Traducción de video',
+      'Creación de imágenes'
     ],
     price: 'Desde $4.99/mes'
   },
@@ -311,11 +538,19 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/firefly.svg',
     category: 'IA Generativa',
     features: [
-      '7,000 créditos mensuales',
-      'Generación de imágenes con IA',
-      'Funciones premium de video',
-      'Funciones premium de audio',
-      'Herramientas profesionales'
+      '7,000 créditos generativos mensuales para funciones prémium de video y audio',
+      'Acceso ilimitado a funciones estándar de imágenes y vectores'
+    ],
+    extras: [
+      '100GB de espacio en la nube',
+      'Adobe Fonts'
+    ],
+    recommendedFor: [
+      'Ideación',
+      'Conceptualización',
+      'Creación de video',
+      'Doblaje de audio',
+      'Creación de imágenes'
     ],
     price: 'Desde $9.99/mes'
   },
@@ -327,11 +562,20 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/firefly.svg',
     category: 'IA Generativa',
     features: [
-      '50,000 créditos mensuales',
-      'Generación de imágenes con IA',
-      'Funciones premium de video',
-      'Funciones premium de audio',
-      'Soporte empresarial'
+      '50,000 créditos generativos mensuales para funciones prémium de video y audio',
+      'Acceso ilimitado a funciones estándar de imágenes y vectores'
+    ],
+    extras: [
+      '100GB de espacio en la nube',
+      'Adobe Fonts'
+    ],
+    recommendedFor: [
+      'Ideación',
+      'Conceptualización',
+      'Creación de video',
+      'Traducción de audio',
+      'Traducción de video',
+      'Creación de imágenes'
     ],
     price: 'Desde $19.99/mes'
   },
@@ -347,11 +591,14 @@ export const adobeApps: AdobeApp[] = [
     logo: '/img/Iconos SVG/stock.svg',
     category: 'Recursos',
     features: [
-      'Millones de imágenes',
-      'Videos 4K y HD',
-      'Plantillas profesionales',
-      'Sin derechos de autor',
-      'Integración con Creative Cloud'
+      '10 activos al mes',
+      '500 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Imágenes e ilustraciones de archivo',
+      'Videos 4k y HD sin derechos de autor',
+      'Plantillas diseñadas por artistas',
+      'Pistas de audio y música de archivo'
     ],
     price: 'Desde $29.99/mes'
   },
@@ -368,11 +615,18 @@ export const adobeApps: AdobeApp[] = [
     ],
     category: '3D y Modelado',
     features: [
-      'Creación de materiales 3D',
-      'Captura de texturas',
-      'Pintura digital 3D',
-      'Biblioteca de materiales',
-      'Exportación multiplataforma'
+      'Adobe Substance 3D Sampler',
+      'Adobe Substance 3D Designer',
+      'Adobe Substance 3D Painter',
+      'Adobe Substance 3D Assets'
+    ],
+    extras: [
+      'Miles de activos en 3D',
+      '100 GB de espacio en la nube',
+      '25 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Texturizado 3D'
     ],
     price: 'Desde $19.99/mes'
   },
@@ -391,11 +645,21 @@ export const adobeApps: AdobeApp[] = [
     ],
     category: '3D y Modelado',
     features: [
-      'Modelado 3D profesional',
-      'Texturizado avanzado',
-      'Renderizado de alta calidad',
-      'Miles de activos 3D',
-      'Integración con Creative Cloud'
+      'Adobe Substance 3D Modeler',
+      'Adobe Substance 3D Sampler',
+      'Adobe Substance 3D Designer',
+      'Adobe Substance 3D Painter',
+      'Adobe Substance 3D Stager',
+      'Adobe Substance 3D Assets'
+    ],
+    extras: [
+      'Miles de activos en 3D',
+      '100 GB de espacio en la nube',
+      '100 créditos generativos mensuales'
+    ],
+    recommendedFor: [
+      'Modelado en 3D',
+      'Texturizado 3D'
     ],
     price: 'Desde $49.99/mes',
     popular: true

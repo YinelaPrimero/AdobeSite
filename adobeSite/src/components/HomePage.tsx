@@ -111,7 +111,6 @@ const HomePage: React.FC = () => {
                 <h3 className="app-name">{app.name}</h3>
                 <p className="app-description">{app.shortDescription}</p>
                 <div className="app-category">{app.category}</div>
-                <div className="app-price">{app.price}</div>
                 <button className="app-btn">Ver detalles</button>
               </div>
             ))}
