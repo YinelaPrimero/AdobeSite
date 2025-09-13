@@ -63,12 +63,20 @@ const HomePage: React.FC = () => {
             {adobeApps.map(app => (
               <div 
                 key={app.id} 
-                className={`app-card ${app.popular ? 'popular' : ''}`}
+                className={`app-card ${app.popular ? 'popular' : ''} ${app.id}`}
                 onClick={() => handleAppClick(app.id)}
               >
                 {app.popular && <div className="popular-badge">Popular</div>}
                 <div className="app-logo">
-                  <img src={app.logo} alt={`${app.name} logo`} className="app-logo-img" />
+                  {Array.isArray(app.logo) ? (
+                    <div className="app-logos-container">
+                      {app.logo.map((logoSrc, index) => (
+                        <img key={index} src={logoSrc} alt={`${app.name} logo`} className="app-logo-img" />
+                      ))}
+                    </div>
+                  ) : (
+                    <img src={app.logo} alt={`${app.name} logo`} className="app-logo-img" />
+                  )}
                 </div>
                 <h3 className="app-name">{app.name}</h3>
                 <p className="app-description">{app.shortDescription}</p>

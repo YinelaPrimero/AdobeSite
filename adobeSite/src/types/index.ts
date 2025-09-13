@@ -3,7 +3,7 @@ export interface AdobeApp {
   name: string;
   description: string;
   shortDescription: string;
-  logo: string;
+  logo: string | string[];
   category: string;
   features: string[];
   price: string;

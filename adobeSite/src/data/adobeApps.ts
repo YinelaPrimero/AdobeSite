@@ -42,7 +42,7 @@ export const adobeApps: AdobeApp[] = [
     name: 'Fotografía',
     shortDescription: 'Lightroom, Lightroom Classic, Photoshop + 1TB almacenamiento',
     description: 'El plan perfecto para fotógrafos. Incluye Lightroom, Lightroom Classic, Photoshop para computadora, web, iPhone y iPad, más 1TB de almacenamiento en la nube.',
-    logo: '/img/Iconos SVG/lightroom.svg',
+    logo: ['/img/Iconos SVG/lightroom.svg', '/img/Iconos SVG/photoshop.svg'],
     category: 'Fotografía',
     features: [
       'Lightroom y Lightroom Classic',
@@ -336,39 +336,7 @@ export const adobeApps: AdobeApp[] = [
     price: 'Desde $19.99/mes'
   },
 
-  // 3D y Modelado
-  {
-    id: 'substance-3d-collection',
-    name: 'Adobe Substance 3D Collection',
-    shortDescription: 'Modela, texturiza y renderiza activos y escenas en 3D',
-    description: 'La colección completa de Substance 3D incluye todas las herramientas necesarias para crear, texturizar y renderizar activos y escenas 3D. Incluye acceso a miles de activos 3D.',
-    logo: '/img/Iconos SVG/substance-3d-assets.svg',
-    category: '3D y Modelado',
-    features: [
-      'Modelado 3D profesional',
-      'Texturizado avanzado',
-      'Renderizado de alta calidad',
-      'Miles de activos 3D',
-      'Integración con Creative Cloud'
-    ],
-    price: 'Desde $49.99/mes'
-  },
-  {
-    id: 'substance-3d-texturing',
-    name: 'Texturizados 3D con Adobe Substance',
-    shortDescription: 'Crea, captura y pinta materiales en 3D',
-    description: 'Adobe Substance para texturizado 3D te permite crear, capturar y pintar materiales realistas en 3D. Herramientas profesionales para artistas 3D y diseñadores.',
-    logo: '/img/Iconos SVG/substance-3d-painter.svg',
-    category: '3D y Modelado',
-    features: [
-      'Creación de materiales 3D',
-      'Captura de texturas',
-      'Pintura digital 3D',
-      'Biblioteca de materiales',
-      'Exportación multiplataforma'
-    ],
-    price: 'Desde $19.99/mes'
-  },
+  
 
   // Recursos
   {
@@ -386,5 +354,50 @@ export const adobeApps: AdobeApp[] = [
       'Integración con Creative Cloud'
     ],
     price: 'Desde $29.99/mes'
+  },
+  // 3D y Modelado
+  {
+    id: 'substance-3d-texturing',
+    name: 'Texturizados 3D con Adobe Substance',
+    shortDescription: 'Crea, captura y pinta materiales en 3D',
+    description: 'Adobe Substance para texturizado 3D te permite crear, capturar y pintar materiales realistas en 3D. Herramientas profesionales para artistas 3D y diseñadores.',
+    logo: [
+      '/img/Iconos SVG/substance-3d-sampler.svg',
+      '/img/Iconos SVG/substance-3d-designer.svg',
+      '/img/Iconos SVG/substance-3d-painter.svg'
+    ],
+    category: '3D y Modelado',
+    features: [
+      'Creación de materiales 3D',
+      'Captura de texturas',
+      'Pintura digital 3D',
+      'Biblioteca de materiales',
+      'Exportación multiplataforma'
+    ],
+    price: 'Desde $19.99/mes'
+  },
+  {
+    id: 'substance-3d-collection',
+    name: 'Adobe Substance 3D Collection',
+    shortDescription: 'Modela, texturiza y renderiza activos y escenas en 3D',
+    description: 'La colección completa de Substance 3D incluye todas las herramientas necesarias para crear, texturizar y renderizar activos y escenas 3D. Incluye acceso a miles de activos 3D.',
+    logo: [
+      '/img/Iconos SVG/substance-3d-modeler.svg',
+      '/img/Iconos SVG/substance-3d-sampler.svg',
+      '/img/Iconos SVG/substance-3d-designer.svg',
+      '/img/Iconos SVG/substance-3d-painter.svg',
+      '/img/Iconos SVG/substance-3d-stager.svg',
+      '/img/Iconos SVG/substance-3d-assets.svg'
+    ],
+    category: '3D y Modelado',
+    features: [
+      'Modelado 3D profesional',
+      'Texturizado avanzado',
+      'Renderizado de alta calidad',
+      'Miles de activos 3D',
+      'Integración con Creative Cloud'
+    ],
+    price: 'Desde $49.99/mes',
+    popular: true
   }
 ];
