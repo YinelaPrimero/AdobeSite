@@ -336,25 +336,6 @@ export const adobeApps: AdobeApp[] = [
     price: 'Desde $19.99/mes'
   },
 
-  
-
-  // Recursos
-  {
-    id: 'adobe-stock',
-    name: 'Adobe Stock',
-    shortDescription: 'Accede a millones de imágenes, videos 4K y plantillas',
-    description: 'Adobe Stock es tu biblioteca de recursos creativos con millones de imágenes, videos 4K y HD, plantillas y mucho más sin derechos de autor, todo en el mismo plan.',
-    logo: '/img/Iconos SVG/stock.svg',
-    category: 'Recursos',
-    features: [
-      'Millones de imágenes',
-      'Videos 4K y HD',
-      'Plantillas profesionales',
-      'Sin derechos de autor',
-      'Integración con Creative Cloud'
-    ],
-    price: 'Desde $29.99/mes'
-  },
   // 3D y Modelado
   {
     id: 'substance-3d-texturing',
@@ -375,6 +356,24 @@ export const adobeApps: AdobeApp[] = [
       'Exportación multiplataforma'
     ],
     price: 'Desde $19.99/mes'
+  },
+
+  // Recursos
+  {
+    id: 'adobe-stock',
+    name: 'Adobe Stock',
+    shortDescription: 'Accede a millones de imágenes, videos 4K y plantillas',
+    description: 'Adobe Stock es tu biblioteca de recursos creativos con millones de imágenes, videos 4K y HD, plantillas y mucho más sin derechos de autor, todo en el mismo plan.',
+    logo: '/img/Iconos SVG/stock.svg',
+    category: 'Recursos',
+    features: [
+      'Millones de imágenes',
+      'Videos 4K y HD',
+      'Plantillas profesionales',
+      'Sin derechos de autor',
+      'Integración con Creative Cloud'
+    ],
+    price: 'Desde $29.99/mes'
   },
   {
     id: 'substance-3d-collection',

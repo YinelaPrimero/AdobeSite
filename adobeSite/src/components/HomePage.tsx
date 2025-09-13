@@ -3,6 +3,38 @@ import { useNavigate } from 'react-router-dom';
 import { adobeApps } from '../data/adobeApps';
 import './HomePage.css';
 
+const floatingCardColors: { [key: string]: string } = {
+  'illustrator': '#FF9A00',
+  'photoshop': '#31A8FF',
+  'substance-3d-modeler': '#4CAF50',
+  'creative-cloud': '#E10098',
+};
+
+const appHoverColors: { [key: string]: string } = {
+  'fotografia': 'linear-gradient(135deg, #00A7F5, #31A8FF)', // Lightroom blue to Photoshop blue
+  'substance-3d-collection': 'linear-gradient(135deg, #4CAF50, #388E3C)', // Green gradient
+  'substance-3d-texturing': 'linear-gradient(135deg, #4CAF50, #388E3C)', // Green gradient
+  'creative-cloud-pro': '#E10098', // Example: Adobe Creative Cloud color
+  'creative-cloud-standard': '#E10098',
+  'lightroom': '#00A7F5',
+  'photoshop': '#31A8FF',
+  'illustrator': '#FF9A00',
+  'premiere-pro': '#9900FF',
+  'after-effects': '#CC00FF',
+  'indesign': '#FF3366',
+  'incopy': '#FF6699',
+  'acrobat-pro': '#FF0000',
+  'acrobat-ai-assistant': '#FF0000',
+  'audition': '#00E676',
+  'dreamweaver': '#00BCD4',
+  'animate': '#FF6F00',
+  'express-premium': '#34D1C3',
+  'firefly-standard': '#FF0066',
+  'firefly-pro': '#FF0066',
+  'firefly-premium': '#FF0066',
+  'adobe-stock': '#00C853',
+};
+
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
@@ -25,17 +57,22 @@ const HomePage: React.FC = () => {
             Más de 20 aplicaciones creativas profesionales para diseñadores, 
             fotógrafos, videógrafos y creadores de contenido.
           </p>
-          <div className="hero-actions">
-            <button className="btn-primary-large">Comenzar prueba gratuita</button>
-            <button className="btn-secondary-large">Ver planes y precios</button>
-          </div>
+          
         </div>
         <div className="hero-visual">
           <div className="floating-cards">
-            <div className="card card-1">🎨</div>
-            <div className="card card-2">🎬</div>
-            <div className="card card-3">📸</div>
-            <div className="card card-4">✨</div>
+            <div className="card card-1" style={{ borderColor: floatingCardColors['illustrator'] }}>
+              <img src="/img/Iconos SVG/illustrator.svg" alt="Illustrator logo" />
+            </div>
+            <div className="card card-2" style={{ borderColor: floatingCardColors['photoshop'] }}>
+              <img src="/img/Iconos SVG/photoshop.svg" alt="Photoshop logo" />
+            </div>
+            <div className="card card-3" style={{ borderColor: floatingCardColors['substance-3d-modeler'] }}>
+              <img src="/img/Iconos SVG/substance-3d-modeler.svg" alt="Substance 3D Modeler logo" />
+            </div>
+            <div className="card card-4" style={{ borderColor: floatingCardColors['creative-cloud'] }}>
+              <img src="/img/Iconos SVG/creative-cloud.svg" alt="Creative Cloud logo" />
+            </div>
           </div>
         </div>
       </section>
@@ -65,6 +102,7 @@ const HomePage: React.FC = () => {
                 key={app.id} 
                 className={`app-card ${app.popular ? 'popular' : ''} ${app.id}`}
                 onClick={() => handleAppClick(app.id)}
+                style={{ '--app-accent-color': appHoverColors[app.id] } as React.CSSProperties}
               >
                 {app.popular && <div className="popular-badge">Popular</div>}
                 <div className="app-logo">
