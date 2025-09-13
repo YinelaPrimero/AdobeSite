@@ -45,7 +45,9 @@ const AppDetail: React.FC = () => {
         <div className="app-header">
           <div className="app-header-content">
             <div className="app-logo-large">
-              <img src={app.logo} alt={`${app.name} logo`} className="app-logo-large-img" />
+              {Array.isArray(app.logo)
+                ? <img src={app.logo[0]} alt={`${app.name} logo`} className="app-logo-large-img" />
+                : <img src={app.logo} alt={`${app.name} logo`} className="app-logo-large-img" />}
             </div>
             <div className="app-info">
               <h1 className="app-title">{app.name}</h1>
@@ -79,7 +81,42 @@ const AppDetail: React.FC = () => {
             <div className="info-card">
               <h3>¿Qué incluye?</h3>
               <ul>
-                <li>Acceso completo a {app.name}</li>
+                {Array.isArray(app.logo) && app.id === 'fotografia' ? (
+                  <>
+                    <li>Incluye:
+                      <ul style={{ marginTop: 4, marginBottom: 4 }}>
+                        <li>Adobe Lightroom</li>
+                        <li>Adobe Lightroom Classic</li>
+                        <li>Adobe Photoshop (escritorio, web, iPhone y iPad)</li>
+                      </ul>
+                    </li>
+                  </>
+                ) : Array.isArray(app.logo) && app.id === 'substance-3d-texturing' ? (
+                  <>
+                    <li>Incluye:
+                      <ul style={{ marginTop: 4, marginBottom: 4 }}>
+                        <li>Substance 3D Sampler</li>
+                        <li>Substance 3D Designer</li>
+                        <li>Substance 3D Painter</li>
+                      </ul>
+                    </li>
+                  </>
+                ) : Array.isArray(app.logo) && app.id === 'substance-3d-collection' ? (
+                  <>
+                    <li>Incluye:
+                      <ul style={{ marginTop: 4, marginBottom: 4 }}>
+                        <li>Substance 3D Modeler</li>
+                        <li>Substance 3D Sampler</li>
+                        <li>Substance 3D Designer</li>
+                        <li>Substance 3D Painter</li>
+                        <li>Substance 3D Stager</li>
+                        <li>Substance 3D Assets</li>
+                      </ul>
+                    </li>
+                  </>
+                ) : (
+                  <li>Acceso completo a {app.name}</li>
+                )}
                 <li>Actualizaciones automáticas</li>
                 <li>Soporte técnico 24/7</li>
                 <li>Almacenamiento en la nube</li>
