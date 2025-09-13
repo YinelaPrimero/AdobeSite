@@ -10,31 +10,6 @@ const floatingCardColors: { [key: string]: string } = {
   'creative-cloud': '#E10098',
 };
 
-const appHoverColors: { [key: string]: string } = {
-  'fotografia': 'linear-gradient(135deg, #00A7F5, #31A8FF)', // Lightroom blue to Photoshop blue
-  'substance-3d-collection': 'linear-gradient(135deg, #4CAF50, #388E3C)', // Green gradient
-  'substance-3d-texturing': 'linear-gradient(135deg, #4CAF50, #388E3C)', // Green gradient
-  'creative-cloud-pro': '#E10098', // Example: Adobe Creative Cloud color
-  'creative-cloud-standard': '#E10098',
-  'lightroom': '#00A7F5',
-  'photoshop': '#31A8FF',
-  'illustrator': '#FF9A00',
-  'premiere-pro': '#9900FF',
-  'after-effects': '#CC00FF',
-  'indesign': '#FF3366',
-  'incopy': '#FF6699',
-  'acrobat-pro': '#FF0000',
-  'acrobat-ai-assistant': '#FF0000',
-  'audition': '#00E676',
-  'dreamweaver': '#00BCD4',
-  'animate': '#FF6F00',
-  'express-premium': '#34D1C3',
-  'firefly-standard': '#FF0066',
-  'firefly-pro': '#FF0066',
-  'firefly-premium': '#FF0066',
-  'adobe-stock': '#00C853',
-};
-
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
@@ -102,7 +77,6 @@ const HomePage: React.FC = () => {
                 key={app.id} 
                 className={`app-card ${app.popular ? 'popular' : ''} ${app.id}`}
                 onClick={() => handleAppClick(app.id)}
-                style={{ '--app-accent-color': appHoverColors[app.id] } as React.CSSProperties}
               >
                 {app.popular && <div className="popular-badge">Popular</div>}
                 <div className="app-logo">
