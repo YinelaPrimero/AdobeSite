@@ -94,7 +94,7 @@ export const adobeApps: AdobeApp[] = [
     id: 'fotografia',
     name: 'Fotografía',
     shortDescription: 'Lightroom, Lightroom Classic, Photoshop + 1TB almacenamiento',
-  description: 'El plan de Fotografía de Adobe es la elección preferida por fotógrafos profesionales y entusiastas. Incluye Lightroom y Lightroom Classic para edición y organización avanzada de fotos, así como Photoshop para retoque y composición de imágenes a nivel profesional. Accede a tus fotos desde cualquier dispositivo, gracias a la sincronización en la nube y 1TB de almacenamiento seguro. Aprovecha herramientas de inteligencia artificial para mejorar tus imágenes, flujos de trabajo optimizados y compatibilidad total con archivos RAW. Ideal para quienes buscan calidad, flexibilidad y resultados espectaculares en cada proyecto fotográfico.',
+    description: 'El plan de Fotografía de Adobe es la elección preferida por fotógrafos profesionales y entusiastas. Incluye Lightroom y Lightroom Classic para edición y organización avanzada de fotos, así como Photoshop para retoque y composición de imágenes a nivel profesional. Accede a tus fotos desde cualquier dispositivo, gracias a la sincronización en la nube y 1TB de almacenamiento seguro. Aprovecha herramientas de inteligencia artificial para mejorar tus imágenes, flujos de trabajo optimizados y compatibilidad total con archivos RAW. Ideal para quienes buscan calidad, flexibilidad y resultados espectaculares en cada proyecto fotográfico.',
     logo: ['/img/Iconos SVG/lightroom.svg', '/img/Iconos SVG/photoshop.svg'],
     category: 'Fotografía',
     features: [

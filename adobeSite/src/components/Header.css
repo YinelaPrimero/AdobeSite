@@ -34,6 +34,12 @@
   letter-spacing: -0.5px;
 }
 
+.nav-and-language {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .nav {
   display: flex;
   gap: 2rem;
@@ -56,6 +62,44 @@
   box-shadow: var(--shadow-glow);
 }
 
+.language-switcher {
+  display: flex;
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #2a2a4a;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.language-switcher button:hover {
+  background-color: rgba(255, 71, 87, 0.1);
+}
+
+.language-switcher button.active {
+  background: var(--accent-gradient);
+  color: white;
+  box-shadow: var(--shadow-glow);
+  font-weight: 700;
+}
+
+.flag-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 768px) {
   .header-container {
@@ -64,5 +108,18 @@
   
   .adobe-logo {
     font-size: 1.8rem;
+  }
+
+  .nav-and-language {
+    gap: 0.8rem;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .language-switcher button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
   }
 }

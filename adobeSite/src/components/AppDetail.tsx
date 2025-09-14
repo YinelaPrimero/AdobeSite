@@ -1,13 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { adobeApps } from '../data/adobeApps';
+import { adobeAppsEn } from '../data/adobeAppsEn';
 import './AppDetail.css';
 
 const AppDetail: React.FC = () => {
 
   const { appId } = useParams<{ appId: string }>();
   const navigate = useNavigate();
-  const app = adobeApps.find(app => app.id === appId);
+  const { t, i18n } = useTranslation();
+
+  const currentAppsData = useMemo(() => {
+    return i18n.language === 'en' ? adobeAppsEn : adobeApps;
+  }, [i18n.language]);
+
+  const app = currentAppsData.find(app => app.id === appId);
 
   // Scroll al inicio cada vez que cambia el appId
   useEffect(() => {
@@ -19,10 +27,10 @@ const AppDetail: React.FC = () => {
       <div className="app-detail">
         <div className="container">
           <div className="not-found">
-            <h2>Aplicación no encontrada</h2>
-            <p>La aplicación que buscas no existe.</p>
+            <h2>{t('appNotFoundTitle')}</h2>
+            <p>{t('appNotFoundDescription')}</p>
             <button onClick={() => navigate('/')} className="btn-primary">
-              Volver al inicio
+              {t('backToHome')}
             </button>
           </div>
         </div>
@@ -38,7 +46,7 @@ const AppDetail: React.FC = () => {
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.5 18L8.5 12L14.5 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          Volver a las aplicaciones
+          {t('backToApps')}
         </button>
 
         {/* App Header */}
@@ -46,15 +54,15 @@ const AppDetail: React.FC = () => {
           <div className="app-header-content">
             <div className="app-logo-large">
               {Array.isArray(app.logo)
-                ? <img src={app.logo[0]} alt={`${app.name} logo`} className="app-logo-large-img" />
-                : <img src={app.logo} alt={`${app.name} logo`} className="app-logo-large-img" />}
+                ? <img src={app.logo[0]} alt={`${app.name} ${t('logo')}`} className="app-logo-large-img" />
+                : <img src={app.logo} alt={`${app.name} ${t('logo')}`} className="app-logo-large-img" />}
             </div>
             <div className="app-info">
               <h1 className="app-title">{app.name}</h1>
-              <p className="app-category">{app.category}</p>
-              <p className="app-description">{app.description}</p>
+              <p className="app-category">{t(app.category)}</p>
+              <p className="app-description">{t(`description_${app.id}`)}</p>
               <div className="app-actions">
-                <button className="btn-primary-large">Comprar ahora</button>
+                <button className="btn-primary-large">{t('buyNow')}</button>
               </div>
             </div>
           </div>
@@ -62,12 +70,12 @@ const AppDetail: React.FC = () => {
 
         {/* Features Section */}
         <div className="features-section">
-          <h2>¿Qué Incluye?</h2>
+          <h2>{t('whatItIncludes')}</h2>
           <div className="features-grid">
-            {app.features.map((feature, index) => (
+            {app.features.map((_, index) => (
               <div key={index} className="feature-item">
                 <div className="feature-icon">✓</div>
-                <span>{feature}</span>
+                <span>{t(`feature_${app.id}_${index + 1}`)}</span>
               </div>
             ))}
           </div>
@@ -77,30 +85,30 @@ const AppDetail: React.FC = () => {
         <div className="additional-info">
           <div className="info-grid">
             <div className="info-card">
-              <h3>Beneficios</h3>
+              <h3>{t('benefitsTitle')}</h3>
               <ul>
-                <li>Acceso completo a {app.name}</li>
-                <li>Actualizaciones automáticas</li>
-                <li>Soporte técnico 24/7</li>
-                <li>Almacenamiento en la nube</li>
-                <li>Integración con Creative Cloud</li>
+                <li>{t('fullAccess', { appName: app.name })}</li>
+                <li>{t('automaticUpdates')}</li>
+                <li>{t('techSupport')}</li>
+                <li>{t('cloudStorage')}</li>
+                <li>{t('creativeCloudIntegration')}</li>
               </ul>
             </div>
             
             <div className="info-card">
-              <h3>Extras</h3>
+              <h3>{t('extrasTitle')}</h3>
               <ul>
-                {app.extras && app.extras.map((extra, index) => (
-                  <li key={index}>{extra}</li>
+                {app.extras && app.extras.map((_, index) => (
+                  <li key={index}>{t(`extra_${app.id}_${index + 1}`)}</li>
                 ))}
               </ul>
             </div>
             
             <div className="info-card">
-              <h3>Recomendado para</h3>
+              <h3>{t('recommendedForTitle')}</h3>
               <ul>
-                {app.recommendedFor && app.recommendedFor.map((item, index) => (
-                  <li key={index}>{item}</li>
+                {app.recommendedFor && app.recommendedFor.map((_, index) => (
+                  <li key={index}>{t(`recommendedFor_${app.id}_${index + 1}`)}</li>
                 ))}
               </ul>
             </div>
