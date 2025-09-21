@@ -1,0 +1,11 @@
+/* Main logo image for header/footer */
+.main-logo-img {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2em;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}

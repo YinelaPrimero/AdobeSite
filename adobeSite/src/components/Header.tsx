@@ -3,6 +3,7 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Header.css';
+import './Logo.css';
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -31,7 +32,8 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
+        <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
+          <img src="/img/logoDCT.png" alt="Logo" className="main-logo-img" style={{ width: 38, height: 38, display: 'inline-block' }} />
           <span className="adobe-logo">Digital Creation Tools</span>
         </div>
         <div className="nav-and-language">
