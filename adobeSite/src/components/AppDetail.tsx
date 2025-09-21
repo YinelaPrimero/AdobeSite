@@ -62,7 +62,14 @@ const AppDetail: React.FC = () => {
               <p className="app-category">{t(app.category)}</p>
               <p className="app-description">{t(`description_${app.id}`)}</p>
               <div className="app-actions">
-                <button className="btn-primary-large">{t('buyNow')}</button>
+                <a
+                  className="btn-primary-large"
+                  href="https://www.adobe.com/co/creativecloud/plans.html?sdid=ZKD5F5F3&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwxL7GBhDXARIsAGOcmIMrDdmFsYGJCAtfBN_gffFuTG7ivyStXvW4I9m2_HWlrHKLXRNZj-saAhn1EALw_wcB:G:s&s_kwcid=AL!3085!3!719866303404!e!!g!!adobe!21868494465!171552491002&gad_source=1&gad_campaignid=21868494465&gbraid=0AAAAADxybVolk2tT0EkQHmfQexwrSSljt&gclid=Cj0KCQjwxL7GBhDXARIsAGOcmIMrDdmFsYGJCAtfBN_gffFuTG7ivyStXvW4I9m2_HWlrHKLXRNZj-saAhn1EALw_wcB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('buyNow')}
+                </a>
               </div>
             </div>
           </div>

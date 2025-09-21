@@ -1,3 +1,27 @@
+/* Footer legal links */
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  font-size: 0.97rem;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color, #e44d26);
+  text-decoration: underline;
+}
+
+.footer-separator {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
 .footer {
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
   color: var(--text-primary);

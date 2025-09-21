@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import AppDetail from './components/AppDetail';
+import TermsOfUse from './components/TermsOfUse';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import './App.css';
 
 function App() {
@@ -14,6 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/app/:appId" element={<AppDetail />} />
+            <Route path="/terminos" element={<TermsOfUse />} />
+            <Route path="/privacidad" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />

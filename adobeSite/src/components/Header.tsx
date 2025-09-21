@@ -32,7 +32,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <span className="adobe-logo">Adobe</span>
+          <span className="adobe-logo">Digital Creation Tools</span>
         </div>
         <div className="nav-and-language">
           <nav className="nav">
