@@ -42,15 +42,15 @@ export const servicesTranslations = {
         'Freelancers'
       ]
     },
-    'proton-security': {
-      name: 'Proton Security',
-      shortDescription: 'Servicios de seguridad y privacidad',
-      description: 'Proton ofrece una suite completa de servicios de seguridad y privacidad, incluyendo correo electrónico cifrado, VPN, almacenamiento seguro y gestión de contraseñas. Protege tu información personal y empresarial con tecnología de cifrado de grado militar.',
+    'proton-pass': {
+      name: 'Proton Pass',
+      shortDescription: 'Gestor de contraseñas seguro y privado',
+      description: 'Proton Pass es un gestor de contraseñas de código abierto que prioriza la privacidad y seguridad. Desarrollado por los creadores de ProtonMail, ofrece encriptación de extremo a extremo, autenticación de dos factores y sincronización segura entre dispositivos.',
       features: [
-        'Correo electrónico cifrado',
-        'VPN de alta velocidad',
-        'Almacenamiento seguro',
-        'Gestión de contraseñas'
+        'Encriptación de extremo a extremo',
+        'Generador de contraseñas seguras',
+        'Autenticación de dos factores',
+        'Sincronización entre dispositivos'
       ],
       extras: [
         'Cifrado de extremo a extremo',
@@ -63,15 +63,15 @@ export const servicesTranslations = {
         'Usuarios privados'
       ]
     },
-    '800com-telecom': {
-      name: '800.com Telecom',
-      shortDescription: 'Servicios de telecomunicaciones empresariales',
-      description: '800.com ofrece servicios de telecomunicaciones empresariales avanzados, incluyendo números 800, desvío de llamadas, conferencias y sistemas de comunicación unificada. Ideal para empresas que necesitan una presencia telefónica profesional.',
+    '800-call-forwarding': {
+      name: '800.com Call Forwarding',
+      shortDescription: 'Servicio de desvío de llamadas empresarial',
+      description: '800.com ofrece servicios de números 800 y desvío de llamadas para empresas. Permite establecer presencia nacional con números gratuitos, gestionar llamadas entrantes y mejorar la imagen profesional de tu negocio.',
       features: [
-        'Números 800 profesionales',
+        'Números 800 gratuitos',
         'Desvío de llamadas inteligente',
-        'Conferencias empresariales',
-        'Sistema de comunicación unificada'
+        'Grabación de llamadas',
+        'Reportes de llamadas'
       ],
       extras: [
         'Configuración gratuita',
@@ -105,15 +105,15 @@ export const servicesTranslations = {
         'Streamers'
       ]
     },
-    'streamily-platform': {
-      name: 'Streamily Platform',
-      shortDescription: 'Plataforma de streaming y monetización',
-      description: 'Streamily es una plataforma integral para creadores de contenido que desean monetizar su audiencia. Ofrece herramientas de streaming, gestión de suscriptores, análisis avanzados y múltiples formas de generar ingresos a través de contenido digital.',
+    'streamily-live': {
+      name: 'Streamily Live',
+      shortDescription: 'Plataforma de streaming y transmisión en vivo',
+      description: 'Streamily es una plataforma integral para streaming y transmisión en vivo que permite crear, gestionar y monetizar contenido en tiempo real. Incluye herramientas de producción, análisis avanzados y múltiples opciones de monetización.',
       features: [
-        'Streaming en vivo',
-        'Gestión de suscriptores',
-        'Análisis de audiencia',
-        'Múltiples métodos de pago'
+        'Transmisión en vivo HD/4K',
+        'Chat interactivo',
+        'Monetización integrada',
+        'Análisis de audiencia'
       ],
       extras: [
         'Comisiones competitivas',
@@ -126,15 +126,15 @@ export const servicesTranslations = {
         'Streamers'
       ]
     },
-    'aiseesoft-multimedia': {
-      name: 'Aiseesoft Multimedia',
-      shortDescription: 'Herramientas de conversión multimedia',
-      description: 'Aiseesoft ofrece una suite completa de herramientas para conversión, edición y gestión de archivos multimedia. Convierte videos, audio e imágenes entre diferentes formatos con alta calidad y velocidad, ideal para profesionales del multimedia.',
+    'aiseesoft-converter': {
+      name: 'Aiseesoft Converter',
+      shortDescription: 'Conversión de video y audio de alta calidad',
+      description: 'Aiseesoft ofrece herramientas profesionales para conversión, edición y optimización de archivos multimedia. Con tecnología de IA, permite convertir videos y audios entre más de 1000 formatos manteniendo la máxima calidad.',
       features: [
-        'Conversión de video HD',
-        'Extracción de audio',
-        'Edición de imágenes',
-        'Compresión inteligente'
+        'Conversión entre 1000+ formatos',
+        'Tecnología de IA para optimización',
+        'Preservación de calidad 4K',
+        'Procesamiento por lotes'
       ],
       extras: [
         'Más de 1000 formatos soportados',
@@ -210,15 +210,15 @@ export const servicesTranslations = {
         'Agencias'
       ]
     },
-    'pinata-realestate': {
-      name: 'Pinata Real Estate',
-      shortDescription: 'Plataforma para gestión inmobiliaria',
-      description: 'Pinata es una plataforma especializada en gestión inmobiliaria que conecta propietarios con inquilinos. Ofrece herramientas para listar propiedades, gestionar pagos, comunicaciones y mantenimiento, simplificando la administración de bienes raíces.',
+    'pinata-renters': {
+      name: 'Pinata Renters',
+      shortDescription: 'Plataforma de alquiler para inquilinos',
+      description: 'Pinata es una plataforma que conecta inquilinos con propiedades de alquiler, ofreciendo herramientas para gestionar pagos, comunicación con propietarios y servicios adicionales como seguros y mantenimiento.',
       features: [
-        'Listado de propiedades',
+        'Búsqueda de propiedades',
         'Gestión de pagos',
-        'Comunicación integrada',
-        'Seguimiento de mantenimiento'
+        'Comunicación con propietarios',
+        'Servicios adicionales'
       ],
       extras: [
         'Verificación de inquilinos',
@@ -231,15 +231,15 @@ export const servicesTranslations = {
         'Administradores'
       ]
     },
-    'picsart-design': {
-      name: 'PicsArt Design',
-      shortDescription: 'Herramientas de diseño y edición',
-      description: 'PicsArt es una plataforma completa de diseño y edición de imágenes que combina herramientas profesionales con facilidad de uso. Perfecta para creadores de contenido, diseñadores y cualquier persona que necesite crear contenido visual atractivo.',
+    'picsart-creative': {
+      name: 'PicsArt Creative',
+      shortDescription: 'Editor de fotos y videos con IA',
+      description: 'PicsArt es una plataforma creativa que combina edición de fotos, videos y herramientas de diseño con inteligencia artificial. Ofrece miles de filtros, efectos, stickers y herramientas de diseño para creadores de contenido.',
       features: [
         'Editor de fotos avanzado',
-        'Herramientas de diseño',
-        'Efectos y filtros',
-        'Colaboración en equipo'
+        'Herramientas de video',
+        'IA para edición automática',
+        'Miles de filtros y efectos'
       ],
       extras: [
         'Biblioteca de recursos',
@@ -252,15 +252,15 @@ export const servicesTranslations = {
         'Influencers'
       ]
     },
-    'fileforms-documents': {
-      name: 'FileForms Documents',
-      shortDescription: 'Gestión inteligente de documentos',
-      description: 'FileForms es una plataforma de gestión de documentos que utiliza IA para automatizar la captura, procesamiento y organización de documentos empresariales. Simplifica el flujo de trabajo documental con reconocimiento inteligente y automatización.',
+    'fileforms-document': {
+      name: 'FileForms Document',
+      shortDescription: 'Gestión y procesamiento de documentos',
+      description: 'FileForms es una plataforma para la gestión, procesamiento y automatización de documentos. Utiliza IA para extraer datos, clasificar documentos y automatizar flujos de trabajo documentales.',
       features: [
-        'Captura automática de documentos',
-        'Reconocimiento de texto con IA',
-        'Organización inteligente',
-        'Integración con sistemas empresariales'
+        'Procesamiento de documentos con IA',
+        'Extracción automática de datos',
+        'Clasificación inteligente',
+        'Automatización de flujos'
       ],
       extras: [
         'Procesamiento por lotes',
@@ -294,15 +294,15 @@ export const servicesTranslations = {
         'Profesionales'
       ]
     },
-    'easyship-logistics': {
-      name: 'EasyShip Logistics',
+    'easyship-shipping': {
+      name: 'EasyShip Shipping',
       shortDescription: 'Plataforma de envíos y logística',
-      description: 'EasyShip es una plataforma integral de envíos que conecta empresas con múltiples transportistas para encontrar las mejores tarifas y opciones de entrega. Ideal para e-commerce y empresas que necesitan optimizar su cadena de suministro.',
+      description: 'EasyShip es una plataforma integral de envíos que conecta empresas con más de 250 transportistas globales. Ofrece comparación de precios, gestión de inventario y automatización de procesos logísticos.',
       features: [
-        'Comparación de transportistas',
+        'Comparación de 250+ transportistas',
         'Gestión de inventario',
-        'Seguimiento de envíos',
-        'Etiquetas de envío'
+        'Automatización de envíos',
+        'Seguimiento en tiempo real'
       ],
       extras: [
         'Tarifas preferenciales',
@@ -315,14 +315,14 @@ export const servicesTranslations = {
         'Distribuidores'
       ]
     },
-    'gusto-hr': {
-      name: 'Gusto HR',
-      shortDescription: 'Plataforma de recursos humanos',
-      description: 'Gusto es una plataforma completa de recursos humanos que simplifica la gestión de empleados, nóminas, beneficios y cumplimiento legal. Diseñada para empresas pequeñas y medianas que buscan automatizar sus procesos de RRHH.',
+    'gusto-payroll': {
+      name: 'Gusto Payroll',
+      shortDescription: 'Software de nómina y recursos humanos',
+      description: 'Gusto es una plataforma integral de recursos humanos que automatiza nóminas, beneficios, cumplimiento fiscal y gestión de empleados. Diseñado para pequeñas y medianas empresas que buscan simplificar la administración de personal.',
       features: [
-        'Gestión de nóminas',
-        'Administración de beneficios',
-        'Cumplimiento legal',
+        'Nómina automatizada',
+        'Gestión de beneficios',
+        'Cumplimiento fiscal',
         'Onboarding de empleados'
       ],
       extras: [
@@ -380,7 +380,7 @@ export const servicesTranslations = {
         'Freelancers'
       ]
     },
-    'proton-security': {
+    'proton-pass': {
       name: 'Proton Security',
       shortDescription: 'Security and privacy services',
       description: 'Proton offers a complete suite of security and privacy services, including encrypted email, VPN, secure storage and password management. Protect your personal and business information with military-grade encryption technology.',
@@ -401,7 +401,7 @@ export const servicesTranslations = {
         'Private users'
       ]
     },
-    '800com-telecom': {
+    '800-call-forwarding': {
       name: '800.com Telecom',
       shortDescription: 'Business telecommunications services',
       description: '800.com offers advanced business telecommunications services, including 800 numbers, call forwarding, conferences and unified communication systems. Ideal for businesses that need a professional phone presence.',
@@ -443,7 +443,7 @@ export const servicesTranslations = {
         'Streamers'
       ]
     },
-    'streamily-platform': {
+    'streamily-live': {
       name: 'Streamily Platform',
       shortDescription: 'Streaming and monetization platform',
       description: 'Streamily is a comprehensive platform for content creators who want to monetize their audience. It offers streaming tools, subscriber management, advanced analytics and multiple ways to generate income through digital content.',
@@ -464,7 +464,7 @@ export const servicesTranslations = {
         'Streamers'
       ]
     },
-    'aiseesoft-multimedia': {
+    'aiseesoft-converter': {
       name: 'Aiseesoft Multimedia',
       shortDescription: 'Multimedia conversion tools',
       description: 'Aiseesoft offers a complete suite of tools for multimedia conversion, editing and management. Convert videos, audio and images between different formats with high quality and speed, ideal for multimedia professionals.',
@@ -548,7 +548,7 @@ export const servicesTranslations = {
         'Agencies'
       ]
     },
-    'pinata-realestate': {
+    'pinata-renters': {
       name: 'Pinata Real Estate',
       shortDescription: 'Real estate management platform',
       description: 'Pinata is a specialized real estate management platform that connects property owners with tenants. It offers tools for listing properties, managing payments, communications and maintenance, simplifying real estate administration.',
@@ -569,7 +569,7 @@ export const servicesTranslations = {
         'Administrators'
       ]
     },
-    'picsart-design': {
+    'picsart-creative': {
       name: 'PicsArt Design',
       shortDescription: 'Design and editing tools',
       description: 'PicsArt is a complete image design and editing platform that combines professional tools with ease of use. Perfect for content creators, designers and anyone who needs to create attractive visual content.',
@@ -590,7 +590,7 @@ export const servicesTranslations = {
         'Influencers'
       ]
     },
-    'fileforms-documents': {
+    'fileforms-document': {
       name: 'FileForms Documents',
       shortDescription: 'Intelligent document management',
       description: 'FileForms is a document management platform that uses AI to automate the capture, processing and organization of business documents. Simplify the document workflow with intelligent recognition and automation.',
@@ -632,7 +632,7 @@ export const servicesTranslations = {
         'Professionals'
       ]
     },
-    'easyship-logistics': {
+    'easyship-shipping': {
       name: 'EasyShip Logistics',
       shortDescription: 'Shipping and logistics platform',
       description: 'EasyShip is a comprehensive shipping platform that connects businesses with multiple carriers to find the best rates and delivery options. Ideal for e-commerce and businesses that need to optimize their supply chain.',
@@ -653,7 +653,7 @@ export const servicesTranslations = {
         'Distributors'
       ]
     },
-    'gusto-hr': {
+    'gusto-payroll': {
       name: 'Gusto HR',
       shortDescription: 'Human resources platform',
       description: 'Gusto is a comprehensive human resources platform that simplifies employee management, payroll, benefits and legal compliance. Designed for small and medium businesses looking to automate their HR processes.',
