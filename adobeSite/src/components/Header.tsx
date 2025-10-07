@@ -14,17 +14,17 @@ const Header: React.FC = () => {
     i18n.changeLanguage(lng);
   };
 
-  const handleAppsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleServicesClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     if (location.pathname !== '/') {
       navigate('/');
       // Esperar a que la navegación termine antes de hacer scroll
       setTimeout(() => {
-        const el = document.getElementById('apps');
+        const el = document.getElementById('services');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     } else {
-      const el = document.getElementById('apps');
+      const el = document.getElementById('services');
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         </div>
         <div className="nav-and-language">
           <nav className="nav">
-            <a href="#apps" className="nav-link" onClick={handleAppsClick}>{t('applications')}</a>
+            <a href="#services" className="nav-link" onClick={handleServicesClick}>{t('applications')}</a>
           </nav>
           <div className="language-switcher">
             <button

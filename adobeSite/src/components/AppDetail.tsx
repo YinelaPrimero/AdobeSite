@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { adobeApps } from '../data/adobeApps';
-import { adobeAppsEn } from '../data/adobeAppsEn';
+import { allServices } from '../data/services';
+import { servicesTranslations } from '../data/servicesTranslations';
 import './AppDetail.css';
 
 const AppDetail: React.FC = () => {
@@ -11,18 +11,32 @@ const AppDetail: React.FC = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
-  const currentAppsData = useMemo(() => {
-    return i18n.language === 'en' ? adobeAppsEn : adobeApps;
+  const currentServicesData = useMemo(() => {
+    return allServices;
   }, [i18n.language]);
 
-  const app = currentAppsData.find(app => app.id === appId);
+  const service = currentServicesData.find(service => service.id === appId);
+  
+  // Obtener traducciones del servicio si existen
+  const serviceTranslations = service && servicesTranslations[i18n.language as 'es' | 'en']?.[service.id as keyof typeof servicesTranslations.es];
+  
+  // Usar traducciones si existen, sino usar datos originales
+  const displayService = service ? {
+    ...service,
+    name: serviceTranslations?.name || service.name,
+    shortDescription: serviceTranslations?.shortDescription || service.shortDescription,
+    description: serviceTranslations?.description || service.description,
+    features: serviceTranslations?.features || service.features,
+    extras: serviceTranslations?.extras || service.extras,
+    recommendedFor: serviceTranslations?.recommendedFor || service.recommendedFor
+  } : null;
 
   // Scroll al inicio cada vez que cambia el appId
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [appId]);
 
-  if (!app) {
+  if (!displayService) {
     return (
       <div className="app-detail">
         <div className="container">
@@ -49,27 +63,25 @@ const AppDetail: React.FC = () => {
           {t('backToApps')}
         </button>
 
-        {/* App Header */}
+        {/* Service Header */}
         <div className="app-header">
           <div className="app-header-content">
             <div className="app-logo-large">
-              {Array.isArray(app.logo)
-                ? <img src={app.logo[0]} alt={`${app.name} ${t('logo')}`} className="app-logo-large-img" />
-                : <img src={app.logo} alt={`${app.name} ${t('logo')}`} className="app-logo-large-img" />}
+              {Array.isArray(displayService.logo)
+                ? <img src={displayService.logo[0]} alt={`${displayService.name} ${t('logo')}`} className="app-logo-large-img" />
+                : <img src={displayService.logo} alt={`${displayService.name} ${t('logo')}`} className="app-logo-large-img" />}
             </div>
             <div className="app-info">
-              <h1 className="app-title">{app.name}</h1>
-              <p className="app-category">{t(app.category)}</p>
-              <p className="app-description">{t(`description_${app.id}`)}</p>
+              <h1 className="app-title">{displayService.name}</h1>
+              <p className="app-category">{t(displayService.category)}</p>
+              <p className="app-description">{displayService.description}</p>
               <div className="app-actions">
-                <a
+                <button
                   className="btn-primary-large"
-                  href="https://www.adobe.com/co/creativecloud/plans.html?sdid=ZKD5F5F3&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwxL7GBhDXARIsAGOcmIMrDdmFsYGJCAtfBN_gffFuTG7ivyStXvW4I9m2_HWlrHKLXRNZj-saAhn1EALw_wcB:G:s&s_kwcid=AL!3085!3!719866303404!e!!g!!adobe!21868494465!171552491002&gad_source=1&gad_campaignid=21868494465&gbraid=0AAAAADxybVolk2tT0EkQHmfQexwrSSljt&gclid=Cj0KCQjwxL7GBhDXARIsAGOcmIMrDdmFsYGJCAtfBN_gffFuTG7ivyStXvW4I9m2_HWlrHKLXRNZj-saAhn1EALw_wcB"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => displayService.website ? window.open(displayService.website, '_blank') : navigate('/')}
                 >
-                  {t('buyNow')}
-                </a>
+                  {displayService.website ? (i18n.language === 'es' ? 'Visitar sitio web' : 'Visit website') : t('buyNow')}
+                </button>
               </div>
             </div>
           </div>
@@ -79,10 +91,10 @@ const AppDetail: React.FC = () => {
         <div className="features-section">
           <h2>{t('whatItIncludes')}</h2>
           <div className="features-grid">
-            {app.features.map((_, index) => (
+            {displayService.features.map((feature, index) => (
               <div key={index} className="feature-item">
                 <div className="feature-icon">✓</div>
-                <span>{t(`feature_${app.id}_${index + 1}`)}</span>
+                <span>{feature}</span>
               </div>
             ))}
           </div>
@@ -94,7 +106,7 @@ const AppDetail: React.FC = () => {
             <div className="info-card">
               <h3>{t('benefitsTitle')}</h3>
               <ul>
-                <li>{t('fullAccess', { appName: app.name })}</li>
+                <li>{t('fullAccess', { appName: displayService.name })}</li>
                 <li>{t('automaticUpdates')}</li>
                 <li>{t('techSupport')}</li>
                 <li>{t('cloudStorage')}</li>
@@ -102,23 +114,27 @@ const AppDetail: React.FC = () => {
               </ul>
             </div>
             
-            <div className="info-card">
-              <h3>{t('extrasTitle')}</h3>
-              <ul>
-                {app.extras && app.extras.map((_, index) => (
-                  <li key={index}>{t(`extra_${app.id}_${index + 1}`)}</li>
-                ))}
-              </ul>
-            </div>
+            {displayService.extras && displayService.extras.length > 0 && (
+              <div className="info-card">
+                <h3>{t('extrasTitle')}</h3>
+                <ul>
+                  {displayService.extras.map((extra, index) => (
+                    <li key={index}>{extra}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             
-            <div className="info-card">
-              <h3>{t('recommendedForTitle')}</h3>
-              <ul>
-                {app.recommendedFor && app.recommendedFor.map((_, index) => (
-                  <li key={index}>{t(`recommendedFor_${app.id}_${index + 1}`)}</li>
-                ))}
-              </ul>
-            </div>
+            {displayService.recommendedFor && displayService.recommendedFor.length > 0 && (
+              <div className="info-card">
+                <h3>{t('recommendedForTitle')}</h3>
+                <ul>
+                  {displayService.recommendedFor.map((recommendation, index) => (
+                    <li key={index}>{recommendation}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
 

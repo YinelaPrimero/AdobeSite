@@ -1,41 +1,54 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { adobeApps } from '../data/adobeApps';
-import { adobeAppsEn } from '../data/adobeAppsEn';
+import { allServices } from '../data/services';
+import { servicesTranslations } from '../data/servicesTranslations';
 import './HomePage.css';
 
 const floatingCardColors: { [key: string]: string } = {
   'illustrator': '#FF9A00',
   'photoshop': '#31A8FF',
-  'substance-3d-modeler': '#4CAF50',
-  'creative-cloud': '#E10098',
+  'cloudways-hosting': '#6366F1',
+  'krisp-ai': '#EF4444',
 };
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<string>(t('all'));
-  const [currentApps, setCurrentApps] = useState(adobeApps);
+  const [currentServices, setCurrentServices] = useState(allServices);
+
+  // Función para obtener el servicio con traducciones
+  const getTranslatedService = (service: any) => {
+    const translations = servicesTranslations[i18n.language as 'es' | 'en']?.[service.id as keyof typeof servicesTranslations.es];
+    if (translations) {
+      return {
+        ...service,
+        name: translations.name || service.name,
+        shortDescription: translations.shortDescription || service.shortDescription
+      };
+    }
+    return service;
+  };
 
   useEffect(() => {
     setSelectedCategory(t('all'));
-    setCurrentApps(i18n.language === 'en' ? adobeAppsEn : adobeApps);
+    setCurrentServices(allServices);
   }, [i18n.language, t]);
 
-  const handleAppClick = (appId: string) => {
-    navigate(`/app/${appId}`);
+  const handleServiceClick = (serviceId: string) => {
+    navigate(`/app/${serviceId}`);
   };
 
   const handleFilterClick = (category: string) => {
     setSelectedCategory(category);
   };
 
-  const categories = Array.from(new Set(currentApps.map(app => app.category)));
+  const categories = Array.from(new Set(currentServices.map(service => service.category)));
 
-  const filteredApps = selectedCategory === t('all')
-    ? currentApps
-    : currentApps.filter(app => t(app.category) === selectedCategory);
+  const filteredServices = selectedCategory === t('all')
+    ? [...currentServices].sort(() => Math.random() - 0.5)
+    : currentServices.filter(service => t(service.category) === selectedCategory);
 
   return (
     <div className="home-page">
@@ -59,18 +72,18 @@ const HomePage: React.FC = () => {
             <div className="card card-2" style={{ borderColor: floatingCardColors['photoshop'] }}>
               <img src="/img/Iconos SVG/photoshop.svg" alt={t('photoshopLogoAlt')} />
             </div>
-            <div className="card card-3" style={{ borderColor: floatingCardColors['substance-3d-modeler'] }}>
-              <img src="/img/Iconos SVG/substance-3d-modeler.svg" alt={t('substance3dModelerLogoAlt')} />
+            <div className="card card-3" style={{ borderColor: floatingCardColors['cloudways-hosting'] }}>
+              <img src="/img/newsServices/cloudways.svg" alt="Cloudways Logo" />
             </div>
-            <div className="card card-4" style={{ borderColor: floatingCardColors['creative-cloud'] }}>
-              <img src="/img/Iconos SVG/creative-cloud.svg" alt={t('creativeCloudLogoAlt')} />
+            <div className="card card-4" style={{ borderColor: floatingCardColors['krisp-ai'] }}>
+              <img src="/img/newsServices/krisp.svg" alt="Krisp Logo" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Apps Section */}
-      <section className="apps-section" id="apps">
+      {/* Services Section */}
+      <section className="apps-section" id="services">
         <div className="container">
           <div className="section-header">
             <h2>{t('exploreAppsTitle')}</h2>
@@ -96,32 +109,35 @@ const HomePage: React.FC = () => {
             ))}
           </div>
 
-          {/* Apps Grid */}
+          {/* Services Grid */}
           <div className="apps-grid">
-            {filteredApps.map(app => (
-              <div 
-                key={app.id} 
-                className={`app-card ${app.popular ? 'popular' : ''} ${app.id}`}
-                onClick={() => handleAppClick(app.id)}
-              >
-                {app.popular && <div className="popular-badge">{t('popular')}</div>}
-                <div className="app-logo">
-                  {Array.isArray(app.logo) ? (
-                    <div className="app-logos-container">
-                      {app.logo.map((logoSrc, index) => (
-                        <img key={index} src={logoSrc} alt={`${app.name} ${t('logo')}`} className="app-logo-img" />
-                      ))}
-                    </div>
-                  ) : (
-                    <img src={app.logo} alt={`${app.name} ${t('logo')}`} className="app-logo-img" />
-                  )}
+            {filteredServices.map(service => {
+              const translatedService = getTranslatedService(service);
+              return (
+                <div
+                  key={service.id}
+                  className={`app-card ${service.popular ? 'popular' : ''} ${service.id}`}
+                  onClick={() => handleServiceClick(service.id)}
+                >
+                  {service.popular && <div className="popular-badge">{t('popular')}</div>}
+                  <div className="app-logo">
+                    {Array.isArray(service.logo) ? (
+                      <div className="app-logos-container">
+                        {service.logo.map((logoSrc, index) => (
+                          <img key={index} src={logoSrc} alt={`${translatedService.name} ${t('logo')}`} className="app-logo-img" />
+                        ))}
+                      </div>
+                    ) : (
+                      <img src={service.logo} alt={`${translatedService.name} ${t('logo')}`} className="app-logo-img" />
+                    )}
+                  </div>
+                  <h3 className="app-name">{translatedService.name}</h3>
+                  <p className="app-description">{translatedService.shortDescription}</p>
+                  <div className="app-category">{t(service.category)}</div>
+                  <button className="app-btn">{t('viewDetails')}</button>
                 </div>
-                <h3 className="app-name">{app.name}</h3>
-                <p className="app-description">{t(app.shortDescription)}</p>
-                <div className="app-category">{t(app.category)}</div>
-                <button className="app-btn">{t('viewDetails')}</button>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
