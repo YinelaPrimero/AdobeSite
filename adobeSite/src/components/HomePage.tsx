@@ -76,7 +76,7 @@ const HomePage: React.FC = () => {
               <img src="/img/newsServices/cloudways.svg" alt="Cloudways Logo" />
             </div>
             <div className="card card-4" style={{ borderColor: floatingCardColors['krisp-ai'] }}>
-              <img src="/img/newsServices/krisp.svg" alt="Krisp Logo" />
+              <img src="/img/newsServices/krisp.jpg" alt="Krisp Logo" />
             </div>
           </div>
         </div>

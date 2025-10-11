@@ -302,7 +302,7 @@ export const allServices: Service[] = [
     name: 'Krisp AI',
     shortDescription: 'Eliminación de ruido de fondo en tiempo real',
     description: 'Krisp utiliza inteligencia artificial para eliminar ruido de fondo, ecos y reverberación en llamadas de voz y video. Compatible con más de 800 aplicaciones, mejora la calidad de audio en reuniones, grabaciones y transmisiones en vivo.',
-    logo: '/img/newsServices/krisp.svg',
+    logo: '/img/newsServices/krisp.jpg',
     category: 'Audio y Comunicación',
     features: [
       'Eliminación de ruido en tiempo real',
