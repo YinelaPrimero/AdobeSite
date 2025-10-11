@@ -1,5 +1,121 @@
 export const servicesTranslations = {
   es: {
+    'creative-cloud-pro': {
+      name: 'Creative Cloud Pro',
+      shortDescription: 'Más de 20 aplicaciones creativas profesionales',
+      description: 'Creative Cloud Pro es la solución definitiva para creativos profesionales y equipos que buscan el máximo potencial en su flujo de trabajo. Incluye acceso a más de 20 aplicaciones líderes de Adobe, como Photoshop, Illustrator, Premiere Pro, After Effects y muchas más, todas integradas con potentes herramientas de IA generativa para acelerar la creatividad.',
+      features: [
+        'Photoshop',
+        'Illustrator', 
+        'Premiere Pro',
+        'After Effects',
+        'InDesign',
+        'Lightroom',
+        'Acrobat Pro',
+        'Dreamweaver',
+        'Audition',
+        'Animate'
+      ],
+      extras: [
+        '100GB de espacio en la nube',
+        'Tutoriales paso a paso',
+        'Adobe Portfolio',
+        'Adobe Fonts',
+        'Behance',
+        'Bibliotecas Creative Cloud',
+        'Acceso a las funciones más recientes',
+        '4,000 créditos generativos mensuales'
+      ],
+      recommendedFor: [
+        'Foto',
+        'Diseño gráfico',
+        'Video',
+        'Ilustración',
+        'IU y UX',
+        'Acrobat y PDF',
+        'Redes sociales'
+      ]
+    },
+    'creative-cloud-standard': {
+      name: 'Creative Cloud Standard',
+      shortDescription: 'Las principales aplicaciones de Creative Cloud',
+      description: 'Creative Cloud Standard es el punto de partida ideal para quienes desean iniciarse en el mundo creativo digital. Incluye las aplicaciones esenciales de Adobe, como Photoshop, Illustrator y Acrobat Pro, permitiendo editar imágenes, crear gráficos vectoriales y gestionar documentos PDF con facilidad.',
+      features: [
+        'Photoshop',
+        'Illustrator',
+        'Premiere Pro',
+        'Acrobat Pro',
+        'InDesign',
+        '+ Ver más'
+      ],
+      extras: [
+        '25 créditos generativos mensuales para funciones estándar para imágenes y vectores con IA creativa',
+        'Tutoriales paso a paso',
+        'Adobe Fonts',
+        'Behance',
+        'Bibliotecas Creative Cloud',
+        '100 GB de almacenamiento en la nube'
+      ],
+      recommendedFor: [
+        'Foto, diseño, video y más',
+        'Flujos de trabajo que usan varias aplicaciones creativas',
+        'IA creativa básica'
+      ]
+    },
+    'photoshop': {
+      name: 'Photoshop',
+      shortDescription: 'Crea espectaculares gráficos, fotos e ilustraciones',
+      description: 'Adobe Photoshop es el estándar mundial en edición de imágenes y diseño gráfico. Permite crear, retocar y transformar fotografías, ilustraciones y gráficos con precisión profesional. Sus herramientas avanzadas incluyen capas, máscaras, filtros inteligentes, pinceles personalizables y soporte para gráficos 3D.',
+      features: [
+        'Photoshop',
+        'Adobe Fresco',
+        'Photoshop Express',
+        'Adobe Express',
+        'Adobe Firefly'
+      ],
+      extras: [
+        '100 GB de espacio en la nube',
+        'Tutoriales paso a paso',
+        'Adobe Portfolio',
+        'Adobe Fonts',
+        'Behance',
+        'Bibliotecas Creative Cloud',
+        'Acceso a las funciones más recientes',
+        '25 créditos generativos mensuales'
+      ],
+      recommendedFor: [
+        'Edición de fotos',
+        'Composición',
+        'Dibujo y pintura',
+        'Diseño gráfico'
+      ]
+    },
+    'illustrator': {
+      name: 'Illustrator',
+      shortDescription: 'Crea diseños, ilustraciones y gráficos vectoriales',
+      description: 'Adobe Illustrator es la aplicación líder para la creación de gráficos vectoriales escalables. Permite diseñar logotipos, iconos, ilustraciones y composiciones complejas que mantienen su calidad en cualquier tamaño o resolución. Sus herramientas de dibujo precisas, tipografía avanzada, efectos 3D y compatibilidad con otros productos de Adobe lo convierten en la opción preferida de diseñadores gráficos, ilustradores y creativos digitales.',
+      features: [
+        'Illustrator',
+        'Adobe Express',
+        'Adobe Firefly'
+      ],
+      extras: [
+        '100 GB de espacio en la nube',
+        'Tutoriales paso a paso',
+        'Adobe Portfolio',
+        'Adobe Fonts',
+        'Behance',
+        'Bibliotecas Creative Cloud',
+        'Acceso a las funciones más recientes',
+        '25 créditos generativos mensuales'
+      ],
+      recommendedFor: [
+        'Ilustración',
+        'Dibujo y pintura',
+        'Tipografía',
+        'Diseño gráfico'
+      ]
+    },
     'cloudways-hosting': {
       name: 'Cloudways Hosting',
       shortDescription: 'Hosting en la nube de alto rendimiento',
@@ -335,9 +451,335 @@ export const servicesTranslations = {
         'Startups',
         'Consultores de RRHH'
       ]
+    },
+    'wp-rocket': {
+      name: 'WP Rocket',
+      shortDescription: 'Plugin de caché para WordPress',
+      description: 'WP Rocket es el plugin de caché más popular para WordPress, diseñado para acelerar significativamente el rendimiento de tu sitio web. Con configuración automática y optimizaciones avanzadas, mejora la velocidad de carga y optimiza la experiencia del usuario.',
+      features: [
+        'Caché de páginas automático',
+        'Minificación de CSS y JavaScript',
+        'Lazy loading de imágenes',
+        'Optimización de base de datos'
+      ],
+      extras: [
+        'Configuración automática',
+        'Soporte técnico especializado',
+        'Compatibilidad con temas y plugins'
+      ],
+      recommendedFor: [
+        'Sitios web WordPress',
+        'E-commerce',
+        'Desarrolladores web'
+      ]
+    },
+    'rankprompt-seo': {
+      name: 'RankPrompt SEO',
+      shortDescription: 'Herramienta de SEO y optimización de contenido',
+      description: 'RankPrompt es una plataforma integral de SEO que ayuda a optimizar el contenido para motores de búsqueda. Con análisis de palabras clave, sugerencias de contenido y métricas de rendimiento, mejora la visibilidad de tu sitio web.',
+      features: [
+        'Análisis de palabras clave',
+        'Optimización de contenido',
+        'Seguimiento de rankings',
+        'Análisis de competencia'
+      ],
+      extras: [
+        'Auditorías SEO automáticas',
+        'Monitoreo de backlinks',
+        'Soporte técnico especializado'
+      ],
+      recommendedFor: [
+        'Especialistas en SEO',
+        'Agencias de marketing',
+        'Bloggers y creadores de contenido'
+      ]
+    },
+    'printgen-ai': {
+      name: 'PrintGen AI',
+      shortDescription: 'Generador de diseños con IA para impresión',
+      description: 'PrintGen AI es una plataforma de diseño impulsada por inteligencia artificial que crea automáticamente diseños profesionales para productos de impresión. Con tecnología de IA avanzada, genera logos, tarjetas de visita y materiales de marketing de alta calidad.',
+      features: [
+        'Generación de diseños con IA',
+        'Templates profesionales',
+        'Personalización automática',
+        'Múltiples formatos de exportación'
+      ],
+      extras: [
+        'Diseños ilimitados',
+        'Exportación en alta resolución',
+        'API para desarrolladores'
+      ],
+      recommendedFor: [
+        'Diseñadores gráficos',
+        'Agencias de marketing',
+        'Empresas de impresión'
+      ]
+    },
+    'veed-video': {
+      name: 'VEED Video Editor',
+      shortDescription: 'Editor de video online con IA',
+      description: 'VEED es una plataforma de edición de video online que combina herramientas profesionales con inteligencia artificial. Permite crear, editar y optimizar videos para redes sociales, marketing y contenido educativo con funciones avanzadas de IA.',
+      features: [
+        'Editor de video online',
+        'Subtítulos automáticos con IA',
+        'Eliminación de ruido de fondo',
+        'Templates para redes sociales'
+      ],
+      extras: [
+        'Almacenamiento en la nube',
+        'Branding personalizado',
+        'Integración con plataformas sociales'
+      ],
+      recommendedFor: [
+        'Creadores de contenido',
+        'Marketers digitales',
+        'Educadores'
+      ]
+    },
+    'pixlr-editor': {
+      name: 'Pixlr Editor',
+      shortDescription: 'Editor de fotos online profesional',
+      description: 'Pixlr es una suite completa de herramientas de edición de fotos online que ofrece capacidades profesionales sin necesidad de software instalado. Con múltiples editores, efectos avanzados y herramientas de diseño, permite crear imágenes impactantes.',
+      features: [
+        'Editor de fotos avanzado',
+        'Efectos y filtros profesionales',
+        'Trabajo con capas',
+        'Herramientas de dibujo'
+      ],
+      extras: [
+        'Almacenamiento en la nube',
+        'Integración con redes sociales',
+        'Soporte para múltiples formatos'
+      ],
+      recommendedFor: [
+        'Diseñadores gráficos',
+        'Fotógrafos',
+        'Creadores de contenido'
+      ]
+    },
+    'stardock-software': {
+      name: 'Stardock Software',
+      shortDescription: 'Software de personalización y productividad',
+      description: 'Stardock es una empresa de software especializada en herramientas de personalización del sistema operativo, productividad y utilidades avanzadas. Sus productos incluyen Fences, Start11 y ObjectDock para personalización completa del escritorio.',
+      features: [
+        'Personalización del escritorio',
+        'Organización de archivos',
+        'Mejoras de productividad',
+        'Temas y skins personalizados'
+      ],
+      extras: [
+        'Soporte técnico especializado',
+        'Actualizaciones regulares',
+        'Tutoriales y documentación'
+      ],
+      recommendedFor: [
+        'Usuarios avanzados de Windows',
+        'Profesionales de IT',
+        'Diseñadores y desarrolladores'
+      ]
+    },
+    'melio-payments': {
+      name: 'Melio Payments',
+      shortDescription: 'Plataforma de pagos para pequeñas empresas',
+      description: 'Melio es una plataforma de pagos diseñada específicamente para pequeñas empresas que simplifica la gestión de facturas y pagos a proveedores. Permite pagar facturas por cheque, transferencia bancaria o tarjeta de crédito con automatización completa.',
+      features: [
+        'Pago de facturas online',
+        'Múltiples métodos de pago',
+        'Automatización de pagos',
+        'Reconciliación bancaria'
+      ],
+      extras: [
+        'Soporte al cliente especializado',
+        'Seguridad bancaria',
+        'Aplicación móvil'
+      ],
+      recommendedFor: [
+        'Pequeñas empresas',
+        'Freelancers',
+        'Contadores'
+      ]
+    },
+    'pdffiller-document': {
+      name: 'PDFfiller Document',
+      shortDescription: 'Editor y firmante de PDFs online',
+      description: 'PDFfiller es una plataforma integral para la gestión de documentos PDF que permite editar, firmar, rellenar y compartir documentos de forma segura. Con herramientas avanzadas de edición y firmas electrónicas legales.',
+      features: [
+        'Edición de PDFs online',
+        'Firmas electrónicas legales',
+        'Formularios rellenables',
+        'Conversión de formatos'
+      ],
+      extras: [
+        'Cumplimiento legal',
+        'Auditoría de documentos',
+        'Soporte móvil'
+      ],
+      recommendedFor: [
+        'Profesionales legales',
+        'Empresas',
+        'Recursos humanos'
+      ]
+    },
+    'printify-print': {
+      name: 'Printify Print-on-Demand',
+      shortDescription: 'Plataforma de impresión bajo demanda',
+      description: 'Printify es una plataforma de impresión bajo demanda que permite crear y vender productos personalizados sin inventario. Con integración directa a tiendas online, red global de imprentas y herramientas de diseño.',
+      features: [
+        'Catálogo de productos personalizables',
+        'Integración con tiendas online',
+        'Red global de imprentas',
+        'Herramientas de diseño'
+      ],
+      extras: [
+        'Sin costos de setup',
+        'Comisiones competitivas',
+        'API para desarrolladores'
+      ],
+      recommendedFor: [
+        'Emprendedores',
+        'Diseñadores',
+        'Influencers'
+      ]
+    },
+    'media-io-converter': {
+      name: 'Media.io Converter',
+      shortDescription: 'Conversor multimedia online con IA',
+      description: 'Media.io es una plataforma de conversión y edición multimedia online que utiliza inteligencia artificial para optimizar archivos de video, audio e imagen. Con más de 1000 formatos soportados y herramientas de edición básica.',
+      features: [
+        'Conversión entre 1000+ formatos',
+        'Compresión inteligente con IA',
+        'Edición básica de video',
+        'Extracción de audio'
+      ],
+      extras: [
+        'Procesamiento en la nube',
+        'Sin límites de tamaño',
+        'Descarga directa'
+      ],
+      recommendedFor: [
+        'Creadores de contenido',
+        'Profesionales multimedia',
+        'Desarrolladores'
+      ]
     }
   },
   en: {
+    'creative-cloud-pro': {
+      name: 'Creative Cloud Pro',
+      shortDescription: 'More than 20 professional creative applications',
+      description: 'Creative Cloud Pro is the ultimate solution for creative professionals and teams seeking maximum potential in their workflow. It includes access to over 20 leading Adobe applications, such as Photoshop, Illustrator, Premiere Pro, After Effects, and many more, all integrated with powerful generative AI tools to accelerate creativity.',
+      features: [
+        'Photoshop',
+        'Illustrator', 
+        'Premiere Pro',
+        'After Effects',
+        'InDesign',
+        'Lightroom',
+        'Acrobat Pro',
+        'Dreamweaver',
+        'Audition',
+        'Animate'
+      ],
+      extras: [
+        '100GB cloud storage',
+        'Step-by-step tutorials',
+        'Adobe Portfolio',
+        'Adobe Fonts',
+        'Behance',
+        'Creative Cloud Libraries',
+        'Access to the latest features',
+        '4,000 monthly generative credits'
+      ],
+      recommendedFor: [
+        'Photo',
+        'Graphic design',
+        'Video',
+        'Illustration',
+        'UI & UX',
+        'Acrobat & PDF',
+        'Social media'
+      ]
+    },
+    'creative-cloud-standard': {
+      name: 'Creative Cloud Standard',
+      shortDescription: 'The main Creative Cloud applications',
+      description: 'Creative Cloud Standard is the ideal starting point for those who want to get started in the digital creative world. It includes essential Adobe applications such as Photoshop, Illustrator, and Acrobat Pro, allowing you to edit images, create vector graphics, and manage PDF documents with ease.',
+      features: [
+        'Photoshop',
+        'Illustrator',
+        'Premiere Pro',
+        'Acrobat Pro',
+        'InDesign',
+        '+ See more'
+      ],
+      extras: [
+        '25 monthly generative credits for standard features for images and vectors with creative AI',
+        'Step-by-step tutorials',
+        'Adobe Fonts',
+        'Behance',
+        'Creative Cloud Libraries',
+        '100 GB cloud storage'
+      ],
+      recommendedFor: [
+        'Photo, design, video and more',
+        'Workflows that use multiple creative applications',
+        'Basic creative AI'
+      ]
+    },
+    'photoshop': {
+      name: 'Photoshop',
+      shortDescription: 'Create spectacular graphics, photos and illustrations',
+      description: 'Adobe Photoshop is the global standard in image editing and graphic design. It allows you to create, retouch, and transform photographs, illustrations, and graphics with professional precision. Its advanced tools include layers, masks, smart filters, customizable brushes, and support for 3D graphics.',
+      features: [
+        'Photoshop',
+        'Adobe Fresco',
+        'Photoshop Express',
+        'Adobe Express',
+        'Adobe Firefly'
+      ],
+      extras: [
+        '100 GB cloud storage',
+        'Step-by-step tutorials',
+        'Adobe Portfolio',
+        'Adobe Fonts',
+        'Behance',
+        'Creative Cloud Libraries',
+        'Access to the latest features',
+        '25 monthly generative credits'
+      ],
+      recommendedFor: [
+        'Photo editing',
+        'Composition',
+        'Drawing and painting',
+        'Graphic design'
+      ]
+    },
+    'illustrator': {
+      name: 'Illustrator',
+      shortDescription: 'Create designs, illustrations and vector graphics',
+      description: 'Adobe Illustrator is the leading application for creating scalable vector graphics. It allows you to design logos, icons, illustrations, and complex compositions that maintain their quality at any size or resolution. Its precise drawing tools, advanced typography, 3D effects, and compatibility with other Adobe products make it the preferred choice for graphic designers, illustrators, and digital creatives.',
+      features: [
+        'Illustrator',
+        'Adobe Express',
+        'Adobe Firefly'
+      ],
+      extras: [
+        '100 GB cloud storage',
+        'Step-by-step tutorials',
+        'Adobe Portfolio',
+        'Adobe Fonts',
+        'Behance',
+        'Creative Cloud Libraries',
+        'Access to the latest features',
+        '25 monthly generative credits'
+      ],
+      recommendedFor: [
+        'Illustration',
+        'Drawing and painting',
+        'Typography',
+        'Graphic design'
+      ]
+    },
     'cloudways-hosting': {
       name: 'Cloudways Hosting',
       shortDescription: 'High-performance cloud hosting',
@@ -672,6 +1114,216 @@ export const servicesTranslations = {
         'Small businesses',
         'Startups',
         'HR consultants'
+      ]
+    },
+    'wp-rocket': {
+      name: 'WP Rocket',
+      shortDescription: 'WordPress caching plugin',
+      description: 'WP Rocket is the most popular caching plugin for WordPress, designed to significantly accelerate your website performance. With automatic configuration and advanced optimizations, it improves loading speed and optimizes user experience.',
+      features: [
+        'Automatic page caching',
+        'CSS and JavaScript minification',
+        'Image lazy loading',
+        'Database optimization'
+      ],
+      extras: [
+        'Automatic configuration',
+        'Specialized technical support',
+        'Compatibility with themes and plugins'
+      ],
+      recommendedFor: [
+        'WordPress websites',
+        'E-commerce',
+        'Web developers'
+      ]
+    },
+    'rankprompt-seo': {
+      name: 'RankPrompt SEO',
+      shortDescription: 'SEO and content optimization tool',
+      description: 'RankPrompt is a comprehensive SEO platform that helps optimize content for search engines. With keyword analysis, content suggestions and performance metrics, it improves your website visibility.',
+      features: [
+        'Keyword analysis',
+        'Content optimization',
+        'Ranking tracking',
+        'Competitor analysis'
+      ],
+      extras: [
+        'Automatic SEO audits',
+        'Backlink monitoring',
+        'Specialized technical support'
+      ],
+      recommendedFor: [
+        'SEO specialists',
+        'Marketing agencies',
+        'Bloggers and content creators'
+      ]
+    },
+    'printgen-ai': {
+      name: 'PrintGen AI',
+      shortDescription: 'AI-powered design generator for printing',
+      description: 'PrintGen AI is an artificial intelligence-powered design platform that automatically creates professional designs for print products. With advanced AI technology, it generates logos, business cards and high-quality marketing materials.',
+      features: [
+        'AI design generation',
+        'Professional templates',
+        'Automatic customization',
+        'Multiple export formats'
+      ],
+      extras: [
+        'Unlimited designs',
+        'High-resolution export',
+        'API for developers'
+      ],
+      recommendedFor: [
+        'Graphic designers',
+        'Marketing agencies',
+        'Print companies'
+      ]
+    },
+    'veed-video': {
+      name: 'VEED Video Editor',
+      shortDescription: 'Online video editor with AI',
+      description: 'VEED is an online video editing platform that combines professional tools with artificial intelligence. It allows you to create, edit and optimize videos for social media, marketing and educational content with advanced AI features.',
+      features: [
+        'Online video editor',
+        'AI automatic subtitles',
+        'Background noise removal',
+        'Social media templates'
+      ],
+      extras: [
+        'Cloud storage',
+        'Custom branding',
+        'Social platform integration'
+      ],
+      recommendedFor: [
+        'Content creators',
+        'Digital marketers',
+        'Educators'
+      ]
+    },
+    'pixlr-editor': {
+      name: 'Pixlr Editor',
+      shortDescription: 'Professional online photo editor',
+      description: 'Pixlr is a complete suite of online photo editing tools that offers professional capabilities without the need for installed software. With multiple editors, advanced effects and design tools, it allows you to create stunning images.',
+      features: [
+        'Advanced photo editor',
+        'Professional effects and filters',
+        'Layer work',
+        'Drawing tools'
+      ],
+      extras: [
+        'Cloud storage',
+        'Social media integration',
+        'Multiple format support'
+      ],
+      recommendedFor: [
+        'Graphic designers',
+        'Photographers',
+        'Content creators'
+      ]
+    },
+    'stardock-software': {
+      name: 'Stardock Software',
+      shortDescription: 'Customization and productivity software',
+      description: 'Stardock is a software company specialized in operating system customization tools, productivity and advanced utilities. Their products include Fences, Start11 and ObjectDock for complete desktop customization.',
+      features: [
+        'Desktop customization',
+        'File organization',
+        'Productivity improvements',
+        'Custom themes and skins'
+      ],
+      extras: [
+        'Specialized technical support',
+        'Regular updates',
+        'Tutorials and documentation'
+      ],
+      recommendedFor: [
+        'Advanced Windows users',
+        'IT professionals',
+        'Designers and developers'
+      ]
+    },
+    'melio-payments': {
+      name: 'Melio Payments',
+      shortDescription: 'Payment platform for small businesses',
+      description: 'Melio is a payment platform designed specifically for small businesses that simplifies invoice and vendor payment management. It allows paying invoices by check, bank transfer or credit card with complete automation.',
+      features: [
+        'Online invoice payment',
+        'Multiple payment methods',
+        'Payment automation',
+        'Bank reconciliation'
+      ],
+      extras: [
+        'Specialized customer support',
+        'Banking security',
+        'Mobile application'
+      ],
+      recommendedFor: [
+        'Small businesses',
+        'Freelancers',
+        'Accountants'
+      ]
+    },
+    'pdffiller-document': {
+      name: 'PDFfiller Document',
+      shortDescription: 'Online PDF editor and signer',
+      description: 'PDFfiller is a comprehensive PDF document management platform that allows you to edit, sign, fill and share documents securely. With advanced editing tools and legal electronic signatures.',
+      features: [
+        'Online PDF editing',
+        'Legal electronic signatures',
+        'Fillable forms',
+        'Format conversion'
+      ],
+      extras: [
+        'Legal compliance',
+        'Document audit',
+        'Mobile support'
+      ],
+      recommendedFor: [
+        'Legal professionals',
+        'Businesses',
+        'Human resources'
+      ]
+    },
+    'printify-print': {
+      name: 'Printify Print-on-Demand',
+      shortDescription: 'Print-on-demand platform',
+      description: 'Printify is a print-on-demand platform that allows you to create and sell customized products without inventory. With direct integration to online stores, global printer network and design tools.',
+      features: [
+        'Customizable product catalog',
+        'Online store integration',
+        'Global printer network',
+        'Design tools'
+      ],
+      extras: [
+        'No setup costs',
+        'Competitive commissions',
+        'API for developers'
+      ],
+      recommendedFor: [
+        'Entrepreneurs',
+        'Designers',
+        'Influencers'
+      ]
+    },
+    'media-io-converter': {
+      name: 'Media.io Converter',
+      shortDescription: 'Online multimedia converter with AI',
+      description: 'Media.io is an online multimedia conversion and editing platform that uses artificial intelligence to optimize video, audio and image files. With over 1000 supported formats and basic editing tools.',
+      features: [
+        'Conversion between 1000+ formats',
+        'AI intelligent compression',
+        'Basic video editing',
+        'Audio extraction'
+      ],
+      extras: [
+        'Cloud processing',
+        'No size limits',
+        'Direct download'
+      ],
+      recommendedFor: [
+        'Content creators',
+        'Multimedia professionals',
+        'Developers'
       ]
     }
   }

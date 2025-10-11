@@ -11,7 +11,7 @@ export interface Service {
   extras?: string[];
   recommendedFor?: string[];
   website?: string;
-  serviceType: 'adobe' | 'cloudways' | 'dext' | 'proton' | '800com' | 'krisp' | 'streamily' | 'aiseesoft' | 'sider' | 'weblium' | 'brevo' | 'pinata' | 'picsart' | 'fileforms' | 'doodle' | 'easyship' | 'gusto';
+  serviceType: 'adobe' | 'cloudways' | 'dext' | 'proton' | '800com' | 'krisp' | 'streamily' | 'aiseesoft' | 'sider' | 'weblium' | 'brevo' | 'pinata' | 'picsart' | 'fileforms' | 'doodle' | 'easyship' | 'gusto' | 'wp-rocket' | 'rankprompt' | 'printgen' | 'veed' | 'pixlr' | 'stardock' | 'melio' | 'pdffiller' | 'printify' | 'media-io';
 }
 
 // Mantener compatibilidad con el código existente

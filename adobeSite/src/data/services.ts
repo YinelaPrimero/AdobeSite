@@ -708,5 +708,355 @@ export const allServices: Service[] = [
     popular: true,
     serviceType: 'gusto',
     website: 'https://gusto.com/'
+  },
+
+  // WP ROCKET SERVICES
+  {
+    id: 'wp-rocket',
+    name: 'WP Rocket',
+    shortDescription: 'Plugin de caché para WordPress',
+    description: 'WP Rocket es el plugin de caché más popular para WordPress, diseñado para acelerar significativamente el rendimiento de tu sitio web. Con configuración automática y optimizaciones avanzadas, mejora la velocidad de carga, reduce el tiempo de respuesta del servidor y optimiza la experiencia del usuario.',
+    logo: '/img/newsServices/wp-rocket.svg',
+    category: 'Web Optimization',
+    features: [
+      'Caché de páginas automático',
+      'Minificación de CSS y JavaScript',
+      'Lazy loading de imágenes',
+      'Precarga de páginas',
+      'Optimización de base de datos',
+      'CDN integration',
+      'Cache de objetos'
+    ],
+    extras: [
+      'Configuración automática',
+      'Soporte técnico especializado',
+      'Actualizaciones regulares',
+      'Compatibilidad con temas y plugins'
+    ],
+    recommendedFor: [
+      'Sitios web WordPress',
+      'E-commerce',
+      'Blogs y sitios corporativos',
+      'Desarrolladores web'
+    ],
+    price: 'Desde $49/año',
+    popular: true,
+    serviceType: 'wp-rocket',
+    website: 'https://wp-rocket.me/'
+  },
+
+  // RANKPROMPT SERVICES
+  {
+    id: 'rankprompt-seo',
+    name: 'RankPrompt SEO',
+    shortDescription: 'Herramienta de SEO y optimización de contenido',
+    description: 'RankPrompt es una plataforma integral de SEO que ayuda a optimizar el contenido para motores de búsqueda. Con análisis de palabras clave, sugerencias de contenido y métricas de rendimiento, mejora la visibilidad y el ranking de tu sitio web en los resultados de búsqueda.',
+    logo: '/img/newsServices/rankprompt.svg',
+    category: 'SEO and Marketing',
+    features: [
+      'Análisis de palabras clave',
+      'Optimización de contenido',
+      'Seguimiento de rankings',
+      'Análisis de competencia',
+      'Sugerencias de SEO',
+      'Reportes de rendimiento',
+      'Integración con Google Analytics'
+    ],
+    extras: [
+      'Auditorías SEO automáticas',
+      'Monitoreo de backlinks',
+      'Análisis de velocidad del sitio',
+      'Soporte técnico especializado'
+    ],
+    recommendedFor: [
+      'Especialistas en SEO',
+      'Agencias de marketing',
+      'Bloggers y creadores de contenido',
+      'Empresas online'
+    ],
+    price: 'Desde $29/mes',
+    popular: true,
+    serviceType: 'rankprompt',
+    website: 'https://rankprompt.com/'
+  },
+
+  // PRINTGEN SERVICES
+  {
+    id: 'printgen-ai',
+    name: 'PrintGen AI',
+    shortDescription: 'Generador de diseños con IA para impresión',
+    description: 'PrintGen AI es una plataforma de diseño impulsada por inteligencia artificial que crea automáticamente diseños profesionales para productos de impresión. Con tecnología de IA avanzada, genera logos, tarjetas de visita, folletos y materiales de marketing de alta calidad en segundos.',
+    logo: '/img/newsServices/printgen.svg',
+    category: 'Design and AI',
+    features: [
+      'Generación de diseños con IA',
+      'Templates profesionales',
+      'Personalización automática',
+      'Múltiples formatos de exportación',
+      'Integración con imprentas',
+      'Biblioteca de elementos',
+      'Colaboración en tiempo real'
+    ],
+    extras: [
+      'Diseños ilimitados',
+      'Exportación en alta resolución',
+      'Soporte para múltiples idiomas',
+      'API para desarrolladores'
+    ],
+    recommendedFor: [
+      'Diseñadores gráficos',
+      'Agencias de marketing',
+      'Empresas de impresión',
+      'Freelancers creativos'
+    ],
+    price: 'Desde $19/mes',
+    popular: true,
+    serviceType: 'printgen',
+    website: 'https://printgen.ai/'
+  },
+
+  // VEED SERVICES
+  {
+    id: 'veed-video',
+    name: 'VEED Video Editor',
+    shortDescription: 'Editor de video online con IA',
+    description: 'VEED es una plataforma de edición de video online que combina herramientas profesionales con inteligencia artificial. Permite crear, editar y optimizar videos para redes sociales, marketing y contenido educativo con funciones avanzadas de IA como subtítulos automáticos, eliminación de ruido y mejora de audio.',
+    logo: '/img/newsServices/veed.svg',
+    category: 'Video and Multimedia',
+    features: [
+      'Editor de video online',
+      'Subtítulos automáticos con IA',
+      'Eliminación de ruido de fondo',
+      'Templates para redes sociales',
+      'Colaboración en equipo',
+      'Exportación en múltiples formatos',
+      'Herramientas de marketing'
+    ],
+    extras: [
+      'Almacenamiento en la nube',
+      'Branding personalizado',
+      'Analytics de video',
+      'Integración con plataformas sociales'
+    ],
+    recommendedFor: [
+      'Creadores de contenido',
+      'Marketers digitales',
+      'Educadores',
+      'Empresas de marketing'
+    ],
+    price: 'Desde $12/mes',
+    popular: true,
+    serviceType: 'veed',
+    website: 'https://www.veed.io/'
+  },
+
+  // PIXLR SERVICES
+  {
+    id: 'pixlr-editor',
+    name: 'Pixlr Editor',
+    shortDescription: 'Editor de fotos online profesional',
+    description: 'Pixlr es una suite completa de herramientas de edición de fotos online que ofrece capacidades profesionales sin necesidad de software instalado. Con múltiples editores, efectos avanzados, capas y herramientas de diseño, permite crear imágenes impactantes directamente en el navegador.',
+    logo: '/img/newsServices/pixlr.svg',
+    category: 'Diseño y Edición',
+    features: [
+      'Editor de fotos avanzado',
+      'Efectos y filtros profesionales',
+      'Trabajo con capas',
+      'Herramientas de dibujo',
+      'Corrección de color',
+      'Templates y overlays',
+      'Colaboración en tiempo real'
+    ],
+    extras: [
+      'Almacenamiento en la nube',
+      'Integración con redes sociales',
+      'API para desarrolladores',
+      'Soporte para múltiples formatos'
+    ],
+    recommendedFor: [
+      'Diseñadores gráficos',
+      'Fotógrafos',
+      'Creadores de contenido',
+      'Profesionales del marketing'
+    ],
+    price: 'Desde $7.99/mes',
+    popular: true,
+    serviceType: 'pixlr',
+    website: 'https://pixlr.com/'
+  },
+
+  // STARDOCK SERVICES
+  {
+    id: 'stardock-software',
+    name: 'Stardock Software',
+    shortDescription: 'Software de personalización y productividad',
+    description: 'Stardock es una empresa de software especializada en herramientas de personalización del sistema operativo, productividad y utilidades avanzadas. Sus productos incluyen Fences para organización del escritorio, Start11 para personalización del menú inicio, y ObjectDock para barras de herramientas personalizadas.',
+    logo: '/img/newsServices/stardock.svg',
+    category: 'Productivity and Utilities',
+    features: [
+      'Personalización del escritorio',
+      'Organización de archivos',
+      'Mejoras de productividad',
+      'Temas y skins personalizados',
+      'Gestión de ventanas',
+      'Utilidades del sistema',
+      'Optimización de rendimiento'
+    ],
+    extras: [
+      'Soporte técnico especializado',
+      'Actualizaciones regulares',
+      'Comunidad de usuarios',
+      'Tutoriales y documentación'
+    ],
+    recommendedFor: [
+      'Usuarios avanzados de Windows',
+      'Profesionales de IT',
+      'Diseñadores y desarrolladores',
+      'Usuarios que buscan personalización'
+    ],
+    price: 'Desde $9.99/año',
+    popular: true,
+    serviceType: 'stardock',
+    website: 'https://www.stardock.com/'
+  },
+
+  // MELIO SERVICES
+  {
+    id: 'melio-payments',
+    name: 'Melio Payments',
+    shortDescription: 'Plataforma de pagos para pequeñas empresas',
+    description: 'Melio es una plataforma de pagos diseñada específicamente para pequeñas empresas que simplifica la gestión de facturas y pagos a proveedores. Permite pagar facturas por cheque, transferencia bancaria o tarjeta de crédito, automatizar pagos recurrentes y mantener un control financiero completo.',
+    logo: '/img/newsServices/melio.svg',
+    category: 'Finance and Payments',
+    features: [
+      'Pago de facturas online',
+      'Múltiples métodos de pago',
+      'Automatización de pagos',
+      'Reconciliación bancaria',
+      'Reportes financieros',
+      'Integración contable',
+      'Gestión de proveedores'
+    ],
+    extras: [
+      'Soporte al cliente especializado',
+      'Seguridad bancaria',
+      'API para integraciones',
+      'Aplicación móvil'
+    ],
+    recommendedFor: [
+      'Pequeñas empresas',
+      'Freelancers',
+      'Contadores',
+      'Consultores financieros'
+    ],
+    price: 'Gratis para pagos ACH',
+    popular: true,
+    serviceType: 'melio',
+    website: 'https://meliopayments.com/'
+  },
+
+  // PDFFILLER SERVICES
+  {
+    id: 'pdffiller-document',
+    name: 'PDFfiller Document',
+    shortDescription: 'Editor y firmante de PDFs online',
+    description: 'PDFfiller es una plataforma integral para la gestión de documentos PDF que permite editar, firmar, rellenar y compartir documentos de forma segura. Con herramientas avanzadas de edición, firmas electrónicas legales y colaboración en tiempo real, simplifica el flujo de trabajo documental.',
+    logo: '/img/newsServices/pdffiller.svg',
+    category: 'Gestión de Documentos',
+    features: [
+      'Edición de PDFs online',
+      'Firmas electrónicas legales',
+      'Formularios rellenables',
+      'Conversión de formatos',
+      'Colaboración en tiempo real',
+      'Almacenamiento seguro',
+      'Integración con sistemas'
+    ],
+    extras: [
+      'Cumplimiento legal',
+      'Auditoría de documentos',
+      'API para desarrolladores',
+      'Soporte móvil'
+    ],
+    recommendedFor: [
+      'Profesionales legales',
+      'Empresas',
+      'Recursos humanos',
+      'Consultores'
+    ],
+    price: 'Desde $8/mes',
+    popular: true,
+    serviceType: 'pdffiller',
+    website: 'https://www.pdffiller.com/'
+  },
+
+  // PRINTIFY SERVICES
+  {
+    id: 'printify-print',
+    name: 'Printify Print-on-Demand',
+    shortDescription: 'Plataforma de impresión bajo demanda',
+    description: 'Printify es una plataforma de impresión bajo demanda que permite crear y vender productos personalizados sin inventario. Con integración directa a tiendas online, red global de imprentas y herramientas de diseño, facilita el lanzamiento de un negocio de productos personalizados.',
+    logo: '/img/newsServices/printify.svg',
+    category: 'E-commerce and Sales',
+    features: [
+      'Catálogo de productos personalizables',
+      'Integración con tiendas online',
+      'Red global de imprentas',
+      'Herramientas de diseño',
+      'Gestión de pedidos automática',
+      'Análisis de ventas',
+      'Soporte para múltiples mercados'
+    ],
+    extras: [
+      'Sin costos de setup',
+      'Comisiones competitivas',
+      'Soporte al cliente',
+      'API para desarrolladores'
+    ],
+    recommendedFor: [
+      'Emprendedores',
+      'Diseñadores',
+      'Influencers',
+      'Empresas de e-commerce'
+    ],
+    price: 'Plan gratuito disponible',
+    popular: true,
+    serviceType: 'printify',
+    website: 'https://printify.com/'
+  },
+
+  // MEDIA.IO SERVICES
+  {
+    id: 'media-io-converter',
+    name: 'Media.io Converter',
+    shortDescription: 'Conversor multimedia online con IA',
+    description: 'Media.io es una plataforma de conversión y edición multimedia online que utiliza inteligencia artificial para optimizar archivos de video, audio e imagen. Con más de 1000 formatos soportados, herramientas de edición básica y procesamiento por lotes, simplifica la gestión de archivos multimedia.',
+    logo: '/img/newsServices/media-io.svg',
+    category: 'Multimedia y Conversión',
+    features: [
+      'Conversión entre 1000+ formatos',
+      'Compresión inteligente con IA',
+      'Edición básica de video',
+      'Extracción de audio',
+      'Optimización de imágenes',
+      'Procesamiento por lotes',
+      'Herramientas de recorte y rotación'
+    ],
+    extras: [
+      'Procesamiento en la nube',
+      'Sin límites de tamaño',
+      'Descarga directa',
+      'Sin registro requerido'
+    ],
+    recommendedFor: [
+      'Creadores de contenido',
+      'Profesionales multimedia',
+      'Desarrolladores',
+      'Usuarios ocasionales'
+    ],
+    price: 'Gratis con limitaciones',
+    popular: true,
+    serviceType: 'media-io',
+    website: 'https://www.media.io/'
   }
 ];
