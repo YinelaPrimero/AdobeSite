@@ -120,16 +120,10 @@ const HomePage: React.FC = () => {
                   onClick={() => handleServiceClick(service.id)}
                 >
                   {service.popular && <div className="popular-badge">{t('popular')}</div>}
-                  <div className="app-logo">
-                    {Array.isArray(service.logo) ? (
-                      <div className="app-logos-container">
-                        {service.logo.map((logoSrc, index) => (
-                          <img key={index} src={logoSrc} alt={`${translatedService.name} ${t('logo')}`} className="app-logo-img" />
-                        ))}
-                      </div>
-                    ) : (
-                      <img src={service.logo} alt={`${translatedService.name} ${t('logo')}`} className="app-logo-img" />
-                    )}
+                  <div className="app-icon">
+                    <div className="app-icon-placeholder">
+                      {translatedService.name.charAt(0).toUpperCase()}
+                    </div>
                   </div>
                   <h3 className="app-name">{translatedService.name}</h3>
                   <p className="app-description">{translatedService.shortDescription}</p>

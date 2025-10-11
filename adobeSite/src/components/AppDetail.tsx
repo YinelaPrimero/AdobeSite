@@ -66,10 +66,10 @@ const AppDetail: React.FC = () => {
         {/* Service Header */}
         <div className="app-header">
           <div className="app-header-content">
-            <div className="app-logo-large">
-              {Array.isArray(displayService.logo)
-                ? <img src={displayService.logo[0]} alt={`${displayService.name} ${t('logo')}`} className="app-logo-large-img" />
-                : <img src={displayService.logo} alt={`${displayService.name} ${t('logo')}`} className="app-logo-large-img" />}
+            <div className="app-icon-large">
+              <div className="app-icon-placeholder-large">
+                {displayService.name.charAt(0).toUpperCase()}
+              </div>
             </div>
             <div className="app-info">
               <h1 className="app-title">{displayService.name}</h1>
